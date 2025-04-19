@@ -1,19 +1,19 @@
 import "./header.css";
 import Navbar from "../navbar/navbar";
 import {Link} from "react-router-dom";
-import {useState} from "react";
 import {useAppContext} from "@/context/context";
+import useVisibleHook from "@/components/header/scroll";
 
 export default function Header() {
     // const [animIsPlayed, setAnimIsPlayed] = useState(true);
-    const [visible, setVisible] = useState(true);
+    // const [visible, setVisible] = useState(true);
     const {isOpen, setIsOpen} = useAppContext();
-
+    const show = useVisibleHook();
     // const locationRouter = useLocation();
 
 
     // return <header id={`${(locationRouter.pathname === "/" && animIsPlayed) ? 'header-start' : ''}`}
-    return <header className={`${visible ? '' : 'header-not-visible'}`}>
+    return <header className={`${show ? '' : 'header-not-visible'}`}>
         {/*<StartAnim setAnim={setAnimIsPlayed} pathname={locationRouter.pathname}/>*/}
         <div id="header" className='main-grid'>
             {/*<div id="start-background"/>*/}

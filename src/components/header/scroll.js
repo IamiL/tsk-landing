@@ -3,7 +3,7 @@ import {useEffect, useRef, useState} from 'react';
 const useVisibleHook = () => {
     const [show, setShow] = useState(true);
     const lastScrollY = useRef(0);
-    const threshold = useRef(15);
+    const threshold = useRef(20); // Уменьшаем threshold
 
     const controlNavbar = () => {
         const currentScrollY = window.scrollY;
@@ -21,7 +21,7 @@ const useVisibleHook = () => {
     };
 
     useEffect(() => {
-        let animationFrameId= null; // Указали тип
+        let animationFrameId;
 
         const handleScroll = () => {
             animationFrameId = requestAnimationFrame(controlNavbar);
@@ -31,9 +31,7 @@ const useVisibleHook = () => {
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            if (animationFrameId !== null) {
-                cancelAnimationFrame(animationFrameId);
-            }
+            cancelAnimationFrame(animationFrameId);
         };
     }, []);
 

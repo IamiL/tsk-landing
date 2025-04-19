@@ -6,10 +6,27 @@ import Cart3 from "../../components/cart/3/cart3";
 import Cart5 from "../../components/cart/5/cart5";
 import Carousel from "../../components/carousel/carousel";
 import LicensesSlider from "../../components/licensesSlider/licensesSlider";
-import {useAppContext} from "@/context/context";
 import Pause from "@/components/logo/Pause/pause";
+import {useEffect, useRef} from "react";
 
 export default function HomePage() {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            if (videoRef.current) {
+                try {
+                    videoRef.current.play();
+                } catch (error) {
+                    console.error("Ошибка воспроизведения видео:", error);
+                    // Можно добавить обработку ошибок, например, показать сообщение пользователю или попробовать другие методы
+                }
+            }
+        }, 2000); // 2000 миллисекунд = 2 секунды
+
+        return () => clearInterval(intervalId); // Очистка интервала при размонтировании компонента
+    }, []);
+
     return (
         <>
             <section className="main-grid" id="mainp-sec1">
@@ -27,7 +44,7 @@ export default function HomePage() {
                         id="h1-3padding">крутойойо</span></h1>
                 {/*<Logo1 id={"mainp-sec1-img"}/>*/}
                 <Pause/>
-                <video loop width="100%" autoPlay muted id='mainp-sec1-img'>
+                <video loop width="100%" autoPlay muted id='mainp-sec1-img' ref={videoRef}>
                     {/*<source src={"/video4.mov"}*/}
                     {/*        type='video/quicktime'/>*/}
                     <source src='/logo.webm'
