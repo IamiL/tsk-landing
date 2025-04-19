@@ -1,0 +1,89 @@
+.cart6 {
+    border: 1px solid rgba(247, 247, 247, 0.75);
+    height: calc(var(--1w) * 2.37);
+}
+
+.cart6-heading {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-top: calc(var(--1w) * 0.17);
+    padding-left: calc(var(--1w) * 0.18);
+    padding-right: calc(var(--1w) * 0.6);
+}
+
+.cart6-value {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    padding-top: calc(var(--1w) * 0.13);
+    padding-left: calc(var(--1w) * 0.18);
+    padding-right: calc(var(--1w) * 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(var(--1w) * 2.37);
+    padding-bottom: calc(var(--1w) * 0.22);
+}
+
+.cart6-img {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    height: calc(var(--1w) * 2.36);
+    border: 1px solid rgba(247, 247, 247, 0.75);
+}
+
+.cart6-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart6-value-link {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .cart6 {
+        height: calc(var(--svh) * 47.652575);
+        display: inline-grid;
+        grid-template-columns: 100%;
+        grid-template-rows: calc(var(--svh) * 8.333332) calc(var(--svh) * 16.666664) calc(var(--svh) * 22.652579);
+    }
+
+    .cart6-heading {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .cart6-value {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: calc(var(--svh) * 22.652579);
+        padding-top: calc(var(--svh) * 3.63849765258);
+    }
+
+    .cart6-value-link {
+        align-self: flex-end;
+        margin-bottom: 1%;
+        margin-right: 2%;
+    }
+
+    .cart6-img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-top: calc(var(--svh) * 2.3474151737);
+        border: none;
+        height: calc(var(--svh) * 16.666664);
+    }
+
+    .cart6-img > img {
+        height: 100%;
+        object-fit: contain;
+    }
+}

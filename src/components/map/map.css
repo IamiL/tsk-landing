@@ -1,0 +1,14 @@
+#map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    #map-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

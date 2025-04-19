@@ -1,0 +1,80 @@
+.cart3t1 {
+    width: calc(var(--1w) * 3.63805971507);
+    display: grid;
+    grid-template-rows: calc(var(--1w) * 0.570896) calc(var(--1w) * 3.2462687);
+    row-gap: calc(var(--1w) * 0.1791044);
+    border-top: 1px solid rgba(247, 247, 247, 0.75);
+    border-right: 1px solid rgba(247, 247, 247, 0.75);
+    padding-top: calc(var(--1w) * 0.1791044);
+    padding-right: calc(var(--1w) * 0.1791044);
+}
+
+.cart3t2 {
+    width: calc(var(--1w) * 3.63806);
+    display: grid;
+    grid-template-rows: calc(var(--1w) * 0.570896) calc(var(--1w) * 3.2462687);
+    row-gap: calc(var(--1w) * 0.1791044);
+    border-top: 1px solid rgba(247, 247, 247, 0.75);
+    border-right: 1px solid rgba(247, 247, 247, 0.75);
+    padding-top: calc(var(--1w) * 0.15);
+    padding-right: calc(var(--1w) * 0.3);
+}
+
+/*.cart3t2-container {*/
+/*    margin-top: calc(var(--1w) * 0.1);*/
+/*}*/
+
+.cart3t1-children {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cart3t2-children {
+    display: flex;
+    justify-content: center;
+}
+
+.cart3t2-container-text {
+    padding-top: calc(var(--1w) * 0.05);
+}
+
+#reviewsp-reviews {
+    margin-top: calc(var(--1w) * 0.7);
+}
+
+
+@media only screen and (max-width: 767px) {
+    .cart3t1 {
+        height: calc(var(--svh) * 55.985907);
+        padding: unset;
+        width: unset;
+        grid-template-rows: calc(var(--1h) * 2 + var(--1g)) calc(var(--1h) * 5 + var(--1g) * 5);
+    }
+
+    .cart3t1-container-text {
+        height: calc(var(--svh) * 14.319247);
+    }
+
+    .cart3t1-children {
+        height: calc(var(--svh) * 41.66666);
+    }
+
+
+    .cart3t2 {
+        width: 100%;
+        display: grid;
+        grid-template-rows: calc(var(--svh) * 14.319247) calc(var(--svh) * 41.66666);
+        row-gap: 0;
+        border-top: 1px solid rgba(247, 247, 247, 0.75);
+        border-right: 1px solid rgba(247, 247, 247, 0.75);
+        padding-top: var(--1g);
+        padding-left: 2%;
+        padding-right: calc(var(--1w) * 0.3);
+        padding-bottom: calc(var(--1h) * 0.3);
+    }
+
+    .cart3t2-container {
+        height: calc(var(--svh) * 11.97183);
+    }
+}

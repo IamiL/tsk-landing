@@ -1,0 +1,50 @@
+#map {
+    height: calc(var(--1w) * 5.5634329);
+    width: calc(var(--1w) * 10.0074627);
+    object-fit: cover;
+}
+
+#point1 {
+    top: calc(var(--1w) * 1.52);
+    left: calc(var(--1w) * 1.43);
+}
+
+#point2 {
+    top: calc(var(--1w) * 3.35);
+    left: calc(var(--1w) * 0.9);
+}
+
+#point3 {
+    top: calc(var(--1w) * 2.4);
+    left: calc(var(--1w) * 2.5);
+}
+
+#point4 {
+    top: calc(var(--1w) * 3.65);
+    left: calc(var(--1w) * 3.65);
+}
+
+#point5 {
+    top: calc(var(--1w) * 4.1);
+    left: calc(var(--1w) * 5);
+}
+
+#point6 {
+    top: calc(var(--1w) * 4.6);
+    left: calc(var(--1w) * 5.6);
+}
+
+#point7 {
+    top: calc(var(--1w) * 1.2);
+    left: calc(var(--1w) * 6.4);
+}
+
+#point8 {
+    top: calc(var(--1w) * 1.7);
+    right: calc(var(--1w) * 1.15);
+}
+
+#point9 {
+    top: calc(var(--1w) * 4.2);
+    right: calc(var(--1w) * 1.6);
+}

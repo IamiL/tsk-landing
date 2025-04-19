@@ -1,0 +1,32 @@
+#services-mobile {
+    margin-top: calc(var(--svh) * 8.333332);
+}
+
+#services-mobile .slick-dots {
+    font-size: 20px;
+    bottom: 10px;
+    color: white;
+    position: unset;
+    height: var(--1h);
+    margin-top: var(--1g);
+}
+
+#services-mobile .slick-list {
+    height: calc(var(--svh) * 39.319243);
+}
+
+#services-mobile .slick-slide {
+    height: calc(var(--svh) * 55.985907);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#services-mobile .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: start;
+}
+
+#services-mobile .slick-track {
+    height: 100%;
+}

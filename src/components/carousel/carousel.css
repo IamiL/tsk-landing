@@ -1,0 +1,28 @@
+.slick-slider {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slick-slide {
+    width: auto; /* или задайте конкретный размер */
+}
+
+@media only screen and (max-width: 767px) {
+    #mainp-sec6-reviews .slick-list {
+        height: calc(var(--svh) * 55.985907);
+    }
+
+    #mainp-sec6-reviews .slick-dots {
+        display: flex !important;
+        justify-content: center;
+        align-items: start;
+        position: unset;
+        margin-top: var(--1g);
+        height: var(--1h);
+    }
+
+    #mainp-sec6-reviews .slick-slide {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

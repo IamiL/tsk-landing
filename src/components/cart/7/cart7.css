@@ -1,0 +1,11 @@
+.cart7 {
+    border: 1px solid rgba(247, 247, 247, 0.75);
+    height: calc(var(--1w) * 5.5);
+}
+
+.cart7-heading {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-top: calc(var(--1w) * 0.18);
+    padding-left: calc(var(--1w) * 0.19);
+}

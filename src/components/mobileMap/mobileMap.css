@@ -1,0 +1,85 @@
+#mobile-map {
+    /*height: 23.8262875svh;*/
+    display: flex;
+    justify-content: center;
+    /*height: 23.8262875svh;*/
+    width: 90vw;
+    height: 49.3548387098vw;
+    position: relative;
+}
+
+#mobile-map-img {
+    width: 90vw;
+    height: 49.3548387098vw;
+}
+
+#mobile-map-carts {
+    width: 100%;
+}
+
+#mobile-map-carts .slick-dots {
+    font-size: 20px;
+    bottom: 10px;
+    color: white;
+    position: unset;
+    margin-top: var(--1g);
+    height: var(--1h);
+}
+
+#mobile-map-carts .slick-list {
+    height: calc(var(--svh) * 47.652575);
+}
+
+#mobile-map-carts .slick-slide {
+    height: calc(var(--svh) * 47.652575);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#mobile-map-carts {
+    margin-top: calc(var(--svh) * 9.5070405);
+}
+
+#mpoint1 {
+    top: 27.5%;
+    left: 5.6%;
+}
+
+#mpoint2 {
+    top: 61%;
+    left: 0.6%;
+}
+
+#mpoint3 {
+    top: 45%;
+    left: 14%;
+}
+
+#mpoint4 {
+    top: 62.8%;
+    left: 15%;
+}
+
+#mpoint5 {
+    top: 62.8%;
+    left: 30.8%;
+}
+
+#mpoint6 {
+    top: 75%;
+    left: 41.5%;
+}
+
+#mpoint7 {
+    top: 18%;
+    left: 53%;
+}
+
+#mpoint8 {
+    top: 9.5%;
+    left: 86%;
+}
+
+.zoom-effect {
+    transform: scale(2) translateY(-17%) !important;
+}
