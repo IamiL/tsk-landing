@@ -50,6 +50,7 @@ import CasesPage from "@/pages/cases/page";
 //     },
 // ]);
 
+
 export default function Csr() {
     return (
         typeof document !== 'undefined' &&

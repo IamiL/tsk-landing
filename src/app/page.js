@@ -1,7 +1,7 @@
-import Csr from "@/csr/csr";
+import CsrSsrWrapper from "@/csr/csrSsrWrapper";
 
 export default function Home() {
-  return (
-        <Csr />
-  );
+    return (
+        <CsrSsrWrapper/>
+    );
 }
