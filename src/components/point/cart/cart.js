@@ -11,7 +11,7 @@ export default function PointCart({id, isOpen, open, close, cartLeft}) {
         <div
             className={`point-info ${isOpen ? `${cartLeft ? 'point-info-open-right' : 'point-info-open-left'}` : `${cartLeft ? 'point-info-close-right' : 'point-info-close-left'}`}`}>
             <div className='point-info-top'>
-                <h3 className='point-info-heading fs9 i-m'>КИТСОЗ</h3>
+                <h3 className='point-info-heading fs9 i-m'>Название проекта</h3>
                 <button className='point-info-close-btn fs10 i-m' onClick={close}>
                     <svg className='point-info-close-btn-svg' id="a" data-name="Слой 1"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 516.67 516.67">
@@ -21,12 +21,15 @@ export default function PointCart({id, isOpen, open, close, cartLeft}) {
                 </button>
             </div>
             <div className='point-info-img-container'>
-                <img src={'CaseUral.webp'} alt={'caseUral'} className='point-info-img'/>
+                {/*<img src={'CaseUral.webp'} alt={'caseUral'} className='point-info-img'/>*/}
+                <img src={'/not-found1.png'} alt={'caseUral'} className='point-info-img'/>
             </div>
 
             <div className='point-info-info fs10 i-r'>
-                Комплексные строительно-монтажные и пусконаладочные работы по установке системы безопасности для
-                объектов компании, включающие прокладку кабеленесущих конструкций, монтаж кабелей различного...
+                Проект неизвестен, проект неизвестен, проект неизвестен, проект неизвестен, проект неизвестен, проект
+                неизвестен, проект неизвестен, проект неизвестен, проект неизвестен, проект неизвестен, проект...
+                {/*Комплексные строительно-монтажные и пусконаладочные работы по установке системы безопасности для*/}
+                {/*объектов компании, включающие прокладку кабеленесущих конструкций, монтаж кабелей различного...*/}
             </div>
             <div className='point-info-link fs10 i-b'>
                 <Link to={'/'}>

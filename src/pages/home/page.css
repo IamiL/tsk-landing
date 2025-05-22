@@ -30,11 +30,11 @@
 }
 
 #h1-2padding {
-    padding-left: 1.5em;
+    padding-left: 1.27em;
 }
 
 #h1-3padding {
-    padding-left: 3em;
+    padding-left: 5.36em;
 }
 
 
@@ -50,7 +50,7 @@
 #mainp-sec2 {
     width: var(--100w);
     /*height: 100vh;*/
-    height: calc(var(--1w) * 6.26);
+    height: calc(var(--1w) * 5.6);
     margin-top: calc(var(--1w) * 0.35);
     /*margin-top: 6.746vw;*/
     /*display: flex;*/
@@ -63,7 +63,7 @@
 }
 
 #divid1 {
-    height: calc(var(--1w) * 0.6);
+    height: calc(var(--1w) * 0.4);
 }
 
 #mainp-sec2-text {
@@ -73,7 +73,7 @@
 #mainp-sec2-carts {
     display: flex;
     justify-content: space-between;
-    height: calc(var(--1w) * 2.95522389162);
+    height: calc(var(--1w) * 1.95522389162);
     margin-top: calc(var(--1w) * 0.37);
 }
 
@@ -179,7 +179,7 @@
 #mainp-sec5-licenses {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid rgba(247, 247, 247, 0.75);
+    /*border-top: 1px solid rgba(247, 247, 247, 0.75);*/
     margin-top: calc(var(--1w) * 0.37);
     padding-top: calc(var(--1w) * 0.33);
 }

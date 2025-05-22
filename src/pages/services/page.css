@@ -27,7 +27,7 @@
     padding-left: calc(var(--1w) * 0.18);
     padding-right: calc(var(--1w) * 0.5);
     display: grid;
-    grid-template-rows: calc(var(--1w) * 0.82) calc(var(--1w) * 1.29) calc(var(--1w) * 0.4);
+    grid-template-rows: calc(var(--1w) * 0.65) calc(var(--1w) * 0.95) calc(var(--1w) * 0.4);
 }
 
 
