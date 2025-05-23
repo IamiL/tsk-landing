@@ -1,3 +1,7 @@
+.standart-section {
+    width: var(--100w);
+}
+
 .aboutp-sec1 {
     width: var(--100w);
 }

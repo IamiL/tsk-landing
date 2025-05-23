@@ -66,7 +66,7 @@ export default function AboutPage() {
             </section>
             <br/>
             <br/>
-            <section>
+            <section className={'standart-section'}>
                 <div>
                     <h2 className='fs5 i-b' id=''>Ключевые компетенции</h2>
                     <br/>
@@ -83,7 +83,7 @@ export default function AboutPage() {
             </section>
             <br/>
             <br/>
-            <section>
+            <section className={'standart-section'}>
                 <div>
                     <h2 className='fs5 i-b' id=''>Основные направления деятельности</h2>
                     <br/>
@@ -102,7 +102,7 @@ export default function AboutPage() {
             </section>
             <br/>
             <br/>
-            <section>
+            <section className={'standart-section'}>
                 <div>
                     <h2 className='fs5 i-b' id=''>Миссия и ценности</h2>
                     <br/>
@@ -118,7 +118,7 @@ export default function AboutPage() {
             </section>
             <br/>
             <br/>
-            <section>
+            <section className={'standart-section'}>
                 <div>
                     <h2 className='fs5 i-b' id=''>Достижения и партнёры</h2>
                     <br/>
