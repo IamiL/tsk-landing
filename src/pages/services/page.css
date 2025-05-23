@@ -17,7 +17,7 @@
 
 #servicesp-services {
     grid-auto-rows: auto;
-    border: 1px solid rgba(247, 247, 247, 0.75);
+    /*border: 1px solid rgba(247, 247, 247, 0.75);*/
     margin-top: calc(var(--1w) * 0.68);
 }
 

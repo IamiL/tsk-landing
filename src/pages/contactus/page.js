@@ -235,7 +235,7 @@ export default function ContactusPage() {
                                 {/*<label htmlFor='4-1' className='input input-end2'>*/}
                                 <label htmlFor='4-1' className='label'>
                                     <span/>
-                                    система автоматической пожарной сигнализации и оповещения о пожаре
+                                    система автоматической пожарной <br/>сигнализации и оповещения о пожаре
                                 </label>
                             </li>
 
@@ -516,6 +516,13 @@ export default function ContactusPage() {
                         </div>
                     </div>
                     <div className='contactusp-block2'>
+                        <h3 className='fs5 i-m'>Контактный телефон:</h3>
+                        <div className='main-grid'>
+                            <input className='input input-end1 input-text input-text2 fs5 i-r' type='text'
+                                   placeholder='Введите номер телефона*'/>
+                        </div>
+                    </div>
+                    <div className='contactusp-block2'>
                         <h3 className='fs5 i-m'>E-mail:</h3>
                         <div className='main-grid'>
                             <input className='input input-end1 input-text input-text2 fs5 i-r' type='text'
@@ -523,10 +530,24 @@ export default function ContactusPage() {
                         </div>
                     </div>
                     <div className='contactusp-block2'>
-                        <h3 className='fs5 i-m'>Контактный телефон:</h3>
+                        <h3 className='fs5 i-m'>Город:</h3>
                         <div className='main-grid'>
                             <input className='input input-end1 input-text input-text2 fs5 i-r' type='text'
-                                   placeholder='Введите номер телефона*'/>
+                                   placeholder='Введите город*'/>
+                        </div>
+                    </div>
+                    <div className='contactusp-block2'>
+                        <h3 className='fs5 i-m'>Организация:</h3>
+                        <div className='main-grid'>
+                            <input className='input input-end1 input-text input-text2 fs5 i-r' type='text'
+                                   placeholder='Введите организацию*'/>
+                        </div>
+                    </div>
+                    <div className='contactusp-block2'>
+                        <h3 className='fs5 i-m'>Сообщение :</h3>
+                        <div className='main-grid'>
+                            <input className='input input-end1 input-text input-text2 fs5 i-r' type='text'
+                                   placeholder='Введите сообщение*'/>
                         </div>
                     </div>
                 </div>

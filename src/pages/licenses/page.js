@@ -1,9 +1,3 @@
-import lic11 from "./license1_1.png"
-import lic12 from "./license1_2.png"
-import lic21 from "./license2_1.png"
-import lic22 from "./license2_2.png"
-import lic31 from "./license3_1.png"
-import lic32 from "./license3_2.png"
 import "./page.css"
 import Cart7 from "../../components/cart/7/cart7";
 import LicensesSlider2 from "@/components/licensesSlider2/licensesSlider2";
@@ -14,31 +8,33 @@ export default function LicensesPage() {
             <h1 className='fs3 mfs3 m-b' id='licensesp-sec-heading'>Лицензии и допуски</h1>
             <div id='licensesp-container1' className='border-top'>
                 <div id='divid8'/>
+                <p id='casesp-container1-text'
+                   className='fs5 mfs6 i-r'>{`Компания “тСк” обладает всеми требуемыми лицензиями и допусками для проведения проектных и монтажных работ в области систем безопасности.`}</p>
                 <button className='btn fs5 i-m up' id='licensesp-btn'>скачать лицензии и допуски</button>
             </div>
             <div id='licensesp-container2'>
-                <Cart7 heading={'Лицензия на монтаж и обслуживание систем пожарной безопасности'}>
+                <Cart7 heading={'Лицензия МЧС'}>
                     <div className="licensesp-img1">
-                        <img src={lic11} alt={"license"} className='licensesp-img'/>
+                        <img src={'/not-found2.png'} alt={"license"} className='licensesp-img'/>
                     </div>
                     <div className="licensesp-img2">
-                        <img src={lic12} alt={"license"} className='licensesp-img'/>
+                        <img src={'/not-found2.png'} alt={"license"} className='licensesp-img'/>
                     </div>
                 </Cart7>
                 <Cart7 heading={'Допуски СРО'}>
                     <div className="licensesp-img1">
-                        <img src={lic21} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/toleranceSRO1.png'} alt={"license"} className='licensesp-img'/>
                     </div>
                     <div className="licensesp-img2">
-                        <img src={lic22} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/toleranceSRO2.png'} alt={"license"} className='licensesp-img'/>
                     </div>
                 </Cart7>
                 <Cart7 heading={'Допуски ЧелРОП'}>
                     <div className="licensesp-img1">
-                        <img src={lic31} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/toleranceChelROP1.png'} alt={"license"} className='licensesp-img'/>
                     </div>
                     <div className="licensesp-img2">
-                        <img src={lic32} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/toleranceChelROP2.png'} alt={"license"} className='licensesp-img'/>
                     </div>
                 </Cart7>
             </div>

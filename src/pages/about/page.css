@@ -21,7 +21,7 @@
 
 #aboutp-sec1-text {
     grid-column-start: 1;
-    grid-column-end: 8;
+    grid-column-end: -1;
     padding-right: calc(var(--1w) * 0.7);
 }
 
