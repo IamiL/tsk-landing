@@ -31,8 +31,13 @@
         padding-left: 2%;
     }
 
+    .cart2-text {
+        display: none;
+    }
+
     .cart2-children {
         /*padding-bottom: 1.8779342723svh;*/
+        height: unset;
         padding-bottom: calc(var(--svh) * 3);
         display: flex;
         justify-content: center;
