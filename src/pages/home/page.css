@@ -94,9 +94,10 @@
     display: none;
 }
 
-#mainp-sec3-services {
+.mainp-sec3-services {
     border-top: 1px solid rgba(247, 247, 247, 0.75);
-    margin-top: calc(var(--1w) * 0.18);
+    /*margin-top: calc(var(--1w) * 10);*/
+    margin-top: 100px;
 }
 
 #mainp-sec3-block2, #mainp-sec3-block3, #mainp-sec3-block4, #mainp-sec3-block5, #mainp-sec3-block6, #mainp-sec3-block7 {
@@ -195,7 +196,7 @@
 }
 
 #mainp-sec6 {
-    width: 100%;
+    width: var(--100w);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,7 +228,7 @@
 
 #mainp-btn2 {
     margin-top: calc(var(--1w) * 0.45);
-    width: var(--100w);
+    /*width: var(--100w);*/
 }
 
 @media only screen and (max-width: 767px) {
@@ -237,6 +238,8 @@
 
     #h1-3padding {
         padding-left: unset;
+        display: flex;
+        justify-content: end;
     }
 
     #mainp-sec1 {
@@ -287,7 +290,7 @@
 
     #mainp-sec2-text-container {
         margin-top: var(--1g);
-        height: calc(var(--svh) * 14.319247);
+        /*height: calc(var(--svh) * 14.319247);*/
     }
 
     #mainp-sec2-carts {
@@ -313,6 +316,11 @@
         height: var(--1h);
         display: flex;
         align-items: end;
+        margin-bottom: calc(var(--1w) * 0.35);
+    }
+
+    .mainp-sec3-services {
+        margin-top: calc(var(--1w) * 0.35);
     }
 
     #divid7 {
@@ -360,7 +368,7 @@
 
     #mainp-sec5-heading {
         height: calc(var(--svh) * 9.5070405);
-        width: 50%;
+        width: 60%;
     }
 
     #mainp-sec5-licenses {
@@ -382,6 +390,9 @@
     #mainp-sec6 {
         display: block;
         margin-top: calc(var(--svh) * 8.45070422535);
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
     }
 
     #mainp-sec6-heading {

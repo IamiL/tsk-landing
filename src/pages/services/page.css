@@ -56,9 +56,10 @@
     }
 
     .servicesp-service {
-        height: calc(var(--svh) * 39.319);
+        height: calc(var(--svh) * 33);
         padding: unset;
-        grid-template-rows: calc(var(--svh) * 8.333332) calc(var(--svh) * 22.652579) calc(var(--svh) * 8.333332);
+        /*grid-template-rows: calc(var(--svh) * 11) calc(var(--svh) * 17) calc(var(--svh) * 4.7);*/
+        grid-template-rows: unset;
         border: 1px solid rgba(247, 247, 247, 0.75);
         padding-left: 2%;
         padding-top: 2%;

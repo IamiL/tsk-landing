@@ -72,7 +72,7 @@ export default function HomePage() {
             </section>
             <section id='mainp-sec3'>
                 <h2 className="fs3 mfs3 m-b up" id='mainp-sec3-heading'>услуги</h2>
-                <div className='main-grid' id='mainp-sec3-services'>
+                <div className='main-grid mainp-sec3-services'>
                     {/*<p id='mainp-sec3-block1' className='fs7 mfs6 i-m'>Мы предлагаем комплексные решения для охраны*/}
                     {/*    объектов и контроля*/}
                     {/*    доступа. Проектируем,*/}
@@ -151,7 +151,7 @@ export default function HomePage() {
                         heading={`Гарантийное и постгарантийное обслуживание`}
                         value={`Постоянная поддержка и оперативное устранение неисправностей.`}
                         link={"/"}
-                        mainClassName={'servicesp-service'}/>
+                        mainClassName={'servicesp-service border-bottom'}/>
                 </div>
             </section>
             <section id='mainp-sec4'>

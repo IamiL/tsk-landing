@@ -51,7 +51,7 @@
 @media only screen and (max-width: 767px) {
     #licensesp-sec-heading {
         height: calc(var(--svh) * 11.3262895);
-        width: 45%;
+        width: 55%;
         padding-left: 10px;
     }
 

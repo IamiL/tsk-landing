@@ -29,21 +29,25 @@ export default function AboutPage() {
                 {/*           mainClassName={'aboutp-sec1-carts-cart'} type={2}/>*/}
                 {/*</div>*/}
             </section>
-            <section id='aboutp-sec2'>
+            <section className='aboutp-sec2'>
                 {/*<p className='fs5 mfs6 i-r'>*/}
                 {/*    Мы стремимся к качеству в каждой детали и на каждом этапе работы.<br/>Наша команда постоянно*/}
                 {/*    совершенствует свои навыки и использует передовые технологии, чтобы обеспечить надежность и*/}
                 {/*    долговечность решений для безопасности.*/}
                 {/*</p>*/}
-                <div className='main-grid' id='aboutp-sec2-container1'>
-                    <div id={'aboutp-sec2-container1-heading'}>
-                        <h2 className='fs5 i-b' id=''>Профиль деятельности</h2>
-                        <br/>
-                        <p className={'fs5 i-r'}>
-                            ООО «тСк» является специализированной компанией, предоставляющей широкий спектр услуг в
-                            области:
-                        </p>
-                    </div>
+                <p id='aboutp-container1-text' className='fs5 mfs6 i-b'>История создания</p>
+                {/*<br/>*/}
+                <div className='main-grid aboutp-sec2-container1'>
+                    <p className={'fs5 i-r'} id={'aboutp-sec2-container1-heading'}>
+                        {/*<h2 className='fs5 i-b' id=''>Профиль деятельности</h2>*/}
+                        {/*<br/>*/}
+                        {/*<p className={'fs5 i-r'}>*/}
+                        {/*    ООО «тСк» является специализированной компанией, предоставляющей широкий спектр услуг в*/}
+                        {/*    области:*/}
+                        {/*</p>*/}
+                        ООО «тСк» является специализированной компанией, предоставляющей широкий спектр услуг в
+                        области:
+                    </p>
                     <ul className='fs5 i-r' id='aboutp-sec2-container1-values'>
                         <li className='aboutp-sec2-container1-value'>
                             <p>Систем безопасности: проектирование, поставка, монтаж и техобслуживание видеоконтроля,
@@ -174,6 +178,95 @@ export default function AboutPage() {
             {/*        </div>*/}
             {/*    </div>*/}
             {/*</section>*/}
+            <section className='aboutp-sec2'>
+                {/*<p className='fs5 mfs6 i-r'>*/}
+                {/*    Мы стремимся к качеству в каждой детали и на каждом этапе работы.<br/>Наша команда постоянно*/}
+                {/*    совершенствует свои навыки и использует передовые технологии, чтобы обеспечить надежность и*/}
+                {/*    долговечность решений для безопасности.*/}
+                {/*</p>*/}
+                <div className='main-grid aboutp-sec2-container1' id='aboutp-sec2-container1'>
+                    <div id={'aboutp-sec2-container1-heading'}>
+                        <h2 className='fs5 i-b' id=''>Что мы предлагаем</h2>
+                        <br/>
+                        <p className={'fs5 i-r'}>
+                            Наши специалисты готовы предложить индивидуальные решения, соответствующие вашим
+                            потребностям и ожиданиям!
+                        </p>
+                    </div>
+                    <ul className='fs5 i-r' id='aboutp-sec2-container1-values'>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Комплекс инженерно-технических средств охраны и защиты (КИТСОЗ).</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Системы видеонаблюдения.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Охранно-пожарная сигнализация и системы оповещения.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Системы пожаротушения.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Контроль и управление доступом.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Интеллектуальные решения на основе машинного зрения, биометрии и аналитики
+                                производства.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Структурированные кабельные сети.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Оборудование систем охраны периметра.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Полный цикл реализации проектов: проектирование, поставка, монтаж, пусконаладка.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Консультирование и обучение сотрудников партнеров.</p>
+                        </li>
+                        <li className='aboutp-sec2-container1-value'>
+                            <p>Гарантийное и постгарантийное обслуживание.</p>
+                        </li>
+                        {/*<li className='aboutp-sec2-container1-value'>*/}
+                        {/*    <p>Индивидуальные решения под нужды заказчика</p>*/}
+                        {/*</li>*/}
+                    </ul>
+                </div>
+            </section>
+            <section className={'standart-section'}>
+                <div>
+                    <h2 className='fs5 i-b' id=''>Конкурентные преимущества</h2>
+                    <br/>
+                    <p className={'fs5 i-r'}>
+                        <li className='aboutp-element-li1'><p>Работа с крупнейшими корпоративными клиентами, такими как
+                            РЖД, Ростех, УГМК, ФОРТУМ, УКС
+                            7
+                            службы ФСБ РФ, НОВАТЕК и другие федеральные заказчики.</p></li>
+                        <li className='aboutp-element-li1'><p>Широкая география проектов: реализация инженерных решений
+                            по всей территории России.</p>
+                        </li>
+                        <li className='aboutp-element-li1'><p>Наличие необходимых разрешительных документов для
+                            производства работ: членство в СРО,
+                            лицензии
+                            МЧС.</p></li>
+                        <li className='aboutp-element-li1'><p>Обученные и сертифицированные специалисты.</p></li>
+                        <li className='aboutp-element-li1'><p>Полный цикл услуг «под ключ»: проектирование, монтаж,
+                            сервисное обслуживание и
+                            консультации по
+                            использованию систем.</p></li>
+                        <li className='aboutp-element-li1'><p>Индивидуальный подход к потребностям каждого заказчика,
+                            независимо от размера и специфики
+                            бизнеса.</p></li>
+                        <li className='aboutp-element-li1'><p>Высококвалифицированная команда профессионалов с
+                            многолетним опытом успешной реализации
+                            проектов.</p></li>
+                        <li className='aboutp-element-li1'><p>Современное высокотехнологичное оборудование ведущих
+                            отечественных и зарубежных
+                            производителей</p></li>
+                    </p>
+                </div>
+            </section>
         </>
     );
 }
