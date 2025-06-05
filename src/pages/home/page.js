@@ -174,16 +174,16 @@ export default function HomePage() {
                     </Cart2>
                     <Cart2 heading={"СРО"}
                            text={'Союз Строительных Компаний Урала и Сибири – свидетельство о членстве в строительной СРО'}>
-                        <img src={'images/licenses/toleranceSRO1.png'} alt={"license"}
+                        <img src={'/not-found2.png'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
-                        <img src={'images/licenses/toleranceSRO2.png'} alt={"license"}
+                        <img src={'/not-found2.png'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
                     </Cart2>
                     <Cart2 heading={"ЧелРОП"}
                            text={'Ассоциация СРО "Челябинское региональное объединение проектировщиков" – свидетельство о членстве в проектной СРО'}>
-                        <img src={'images/licenses/toleranceChelROP1.png'} alt={"license"}
+                        <img src={'/not-found2.png'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
-                        <img src={'images/licenses/toleranceChelROP2.png'} alt={"license"}
+                        <img src={'/not-found2.png'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
                     </Cart2>
                 </div>
@@ -210,35 +210,35 @@ export default function HomePage() {
                         <Cart3
                             heading={"Благодарственное письмо от Челябинского концертного объединения"}
                             type={1}>
-                            <img src={'images/reviews/ChelyabConcertCompany.png'}
+                            <img src={'/not-found2.png'}
                                  alt={"Благодарственное письмо от Челябинского концертного объединения"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарственное письмо от ООО \"Челтелекабель\""}
                             type={1}>
-                            <img src={'images/reviews/Cheltelecabel.png'}
+                            <img src={'/not-found2.png'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарственное письмо от ООО \"Челтелекабель\""}
                             type={1}>
-                            <img src={'images/reviews/Cheltelecabel.png'}
+                            <img src={'/not-found2.png'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарственное письмо от ООО \"Челтелекабель\""}
                             type={1}>
-                            <img src={'images/reviews/Cheltelecabel.png'}
+                            <img src={'/not-found2.png'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарственное письмо от ООО \"Челтелекабель\""}
                             type={1}>
-                            <img src={'images/reviews/Cheltelecabel.png'}
+                            <img src={'/not-found2.png'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
