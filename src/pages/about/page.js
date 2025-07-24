@@ -35,7 +35,7 @@ export default function AboutPage() {
                 {/*    совершенствует свои навыки и использует передовые технологии, чтобы обеспечить надежность и*/}
                 {/*    долговечность решений для безопасности.*/}
                 {/*</p>*/}
-                <p id='aboutp-container1-text' className='fs5 mfs6 i-b'>История создания</p>
+                <p id='aboutp-container1-text' className='fs5 mfs6 i-b'>Профиль деятельности</p>
                 {/*<br/>*/}
                 <div className='main-grid aboutp-sec2-container1'>
                     <p className={'fs5 i-r'} id={'aboutp-sec2-container1-heading'}>

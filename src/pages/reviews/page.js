@@ -75,6 +75,31 @@ export default function ReviewsPage() {
                     type={2}>
                     <img src={'/images/reviews/UralSibirElectroCompany.png'} alt={"review"} className='reviewsp-img'/>
                 </Cart3>
+                <Cart3
+                    heading={`Благодарственное письмо от ООО "Уральско-Сибирская электромонтажная компания"`}
+                    type={2}>
+                    <img src={'/images/reviews/UralSibirElectroCompany.png'} alt={"review"} className='reviewsp-img'/>
+                </Cart3>
+                <Cart3
+                    heading={`Благодарственное письмо от ООО "Уральско-Сибирская электромонтажная компания"`}
+                    type={2}>
+                    <img src={'/images/reviews/UralSibirElectroCompany.png'} alt={"review"} className='reviewsp-img'/>
+                </Cart3>
+                <Cart3
+                    heading={`Благодарственное письмо от ООО "Уральско-Сибирская электромонтажная компания"`}
+                    type={2}>
+                    <img src={'/images/reviews/UralSibirElectroCompany.png'} alt={"review"} className='reviewsp-img'/>
+                </Cart3>
+                <Cart3
+                    heading={`Благодарственное письмо от ООО "Уральско-Сибирская электромонтажная компания"`}
+                    type={2}>
+                    <img src={'/images/reviews/UralSibirElectroCompany.png'} alt={"review"} className='reviewsp-img'/>
+                </Cart3>
+                <Cart3
+                    heading={`Благодарственное письмо от ООО "Уральско-Сибирская электромонтажная компания"`}
+                    type={2}>
+                    <img src={'/images/reviews/UralSibirElectroCompany.png'} alt={"review"} className='reviewsp-img'/>
+                </Cart3>
             </div>
         </section>
     );
