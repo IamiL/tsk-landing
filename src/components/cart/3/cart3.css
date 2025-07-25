@@ -20,10 +20,13 @@
     padding-right: calc(var(--1w) * 0.3);
 }
 
+.cart3t2 .zoomable-image {
+    object-fit: contain;
+}
+
 /*.cart3t2-container {*/
 /*    margin-top: calc(var(--1w) * 0.1);*/
 /*}*/
-
 .cart3t1-children {
     width: 100%;
     display: flex;
