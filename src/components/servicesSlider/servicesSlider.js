@@ -34,28 +34,54 @@ export default function ServicesSlider() {
             <Slider {...settings}>
                 <Cart4 heading={"КИТСОЗ"}
                        value={"Комплексная система, объединяющая видеонаблюдение, сигнализацию и контроль доступа для всесторонней защиты объекта. КИТСОЗ обеспечивает безопасность персонала и имущества, позволяет оперативно реагировать на угрозы и предотвращать инциденты."}
-                       link={"/"}
+                       link={"/services/kitsoz"}
                        mainClassName={'servicesp-service border-right border-bottom'}/>
                 <Cart4 heading={`Системы видеонаблюдения`}
                        value={`Проектирование и установка видеонаблюдения для контроля территории и производственных процессов. Системы позволяют в реальном времени отслеживать обстановку, предотвращать несанкционированный доступ и оперативно реагировать на инциденты.`}
-                       link={"/"}
+                       link={"/services/surveillance-system"}
                        mainClassName={'servicesp-service border-bottom'}/>
                 <Cart4 heading={`Охранно-пожарная сигнализация`}
                        value={`Системы для своевременного обнаружения возгораний и несанкционированного проникновения. Оповещают службы безопасности и персонал, интегрируются с другими системами защиты для комплексной безопасности.`}
-                       link={"/"}
+                       link={"/services/security-and-fire-alarm-systems"}
                        mainClassName={'servicesp-service border-right border-bottom'}/>
-                <Cart4 heading={`СКУД`}
-                       value={`СКУД контролирует доступ сотрудников в различные зоны, фиксирует рабочее время и обеспечивает высокий уровень безопасности. Включает устройства для идентификации, такие как карты и биометрия, с гибкими настройками доступа.`}
-                       link={"/"}
+                <Cart4 heading={`Системы пожаротушения`}
+                       value={`Современные методы защиты от пожаров, гарантирующие безопасность имущества и персонала.`}
+                       link={"/services/extinguishing-system"}
                        mainClassName={'servicesp-service border-bottom'}/>
-                <Cart4 heading={`Охрана периметра `}
-                       value={`Системы периметральной охраны, включающие датчики движения и инфракрасные барьеры, круглосуточно контролируют территорию и предотвращают несанкционированное проникновение.`}
-                       link={"/"}
-                       mainClassName={'servicesp-service border-right'}/>
-                <Cart4 heading={`Структурированные  кабельные сети`}
-                       value={`СКС — основа ИТ-инфраструктуры объекта, объединяющая все системы в единое информационное пространство. Обеспечивает стабильную связь и высокую скорость передачи данных, облегчая обслуживание технических систем.`}
-                       link={"/"}
-                       mainClassName={'servicesp-service'}/>
+                <Cart4 heading={`Контроль и управление доступом`}
+                       value={`Интегрированная система ограничения доступа с использованием биометрии и цифровых карт.`}
+                       link={"/services/access-control"}
+                       mainClassName={'servicesp-service border-bottom'}/>
+                <Cart4
+                    heading={`Проектирование и интеграция систем искусственного интеллекта`}
+                    value={`Машинное обучение, распознавание образов, аналитические платформы для мониторинга производства — создание эффективных инструментов повышения производительности компаний и цифровизация ключевых рабочих процессов.`}
+                    link={"/services/design-and-integration-of-artificial-intelligence"}
+                    mainClassName={'servicesp-service border-bottom'}/>
+                <Cart4
+                    heading={`Структурированные кабельные сети`}
+                    value={`Высокоэффективные инженерные коммуникации для передачи данных и сигналов безопасности.`}
+                    link={"/services/structured-cabling-networks"}
+                    mainClassName={'servicesp-service border-bottom'}/>
+                <Cart4
+                    heading={`Оборудование систем охраны периметра`}
+                    value={`Мониторинг и охрана территории с применением передовых технологий наблюдения и фиксации вторжения.`}
+                    link={"/services/perimeter-security-systems-equipment"}
+                    mainClassName={'servicesp-service border-bottom'}/>
+                <Cart4
+                    heading={`Полный цикл реализации проектов`}
+                    value={`От разработки проектной документации до сдачи готового объекта «под ключ».`}
+                    link={"/services/full-cycle-of-project-implementation"}
+                    mainClassName={'servicesp-service border-bottom'}/>
+                <Cart4
+                    heading={`Консультация и обучение персонала заказчика`}
+                    value={`Подготовка специалистов заказчика для эффективного использования установленных систем безопасности.`}
+                    link={"/services/customers-staff-training"}
+                    mainClassName={'servicesp-service border-bottom'}/>
+                <Cart4
+                    heading={`Гарантийное и постгарантийное обслуживание`}
+                    value={`Постоянная поддержка и оперативное устранение неисправностей.`}
+                    link={"/services/warranty-and-post-warranty-service"}
+                    mainClassName={'servicesp-service'}/>
             </Slider>
         </div>
     );

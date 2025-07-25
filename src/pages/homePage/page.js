@@ -316,7 +316,10 @@ export default function HomePage() {
                         </Cart3>
                     </Carousel>
                 </div>
-                <button className='btn fs5 mfs6 i-m up' id='mainp-btn2'>↓ скачать портфолио</button>
+                <button className='btn fs5 mfs6 i-m up' id='mainp-btn2'
+                        onClick={() => window.open("/reviews.rar", "")}>↓
+                    скачать портфолио
+                </button>
             </section>
         </>
     );

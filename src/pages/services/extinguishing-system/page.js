@@ -9,7 +9,7 @@ function ExtinguishingSystemPage() {
                 <div className={styles.divider}/>
             </div>
             <div>
-                <img src="images/services/default-service-image.png" alt="Системы пожаротушения"
+                <img src="/images/services/default-service-image.png" alt="Системы пожаротушения"
                      className={styles.serviceImage}/>
                 <div className='fs5 mfs6 i-r'>
                     <p>Установка современных систем автоматического пожаротушения позволяет значительно повысить уровень
