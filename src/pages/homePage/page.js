@@ -207,111 +207,111 @@ export default function HomePage() {
                         <Cart3
                             heading={"Благодарность от ООО “Урало-Сибирская электротехническая компания”"}
                             type={1}>
-                            <img src={'/images/reviews/Ural-Siberian-Electrotechnical-Company.png'} alt={"review"}
+                            <img src={'/images/reviews/Ural-Siberian-Electrotechnical-Company.webp'} alt={"review"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “УГМК-Телеком”"}
                             type={1}>
-                            <img src={'/images/reviews/UMMC-Telecom.png'}
+                            <img src={'/images/reviews/UMMC-Telecom.webp'}
                                  alt={"Благодарственное письмо от Челябинского концертного объединения"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Аларм”"}
                             type={1}>
-                            <img src={'/images/reviews/alarm.png'}
+                            <img src={'/images/reviews/alarm.webp'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ОАО “ЧМК”"}
                             type={1}>
-                            <img src={'/images/reviews/mechel.png'}
+                            <img src={'/images/reviews/mechel.webp'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от Управления по обустройству государственной границы Российской Федерации"}
                             type={1}>
-                            <img src={'/images/reviews/state-border.png'}
+                            <img src={'/images/reviews/state-border.webp'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ОАО “Kemma”"}
                             type={1}>
-                            <img src={'/images/reviews/kemma.png'}
+                            <img src={'/images/reviews/kemma.webp'}
                                  alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"  Благодарность от ОАО “Челябинский цинковый завод”"}
                             type={1}>
-                            <img src={'/images/reviews/cink.png'}
+                            <img src={'/images/reviews/cink.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО МПК “Ромкор”"}
                             type={1}>
-                            <img src={'/images/reviews/romkor.png'}
+                            <img src={'/images/reviews/romkor.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Виола Арт”"}
                             type={1}>
-                            <img src={'/images/reviews/viola.png'}
+                            <img src={'/images/reviews/viola.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от Государственного унитарного предприятия Челябинской области “Протокол”"}
                             type={1}>
-                            <img src={'/images/reviews/protokol.png'}
+                            <img src={'/images/reviews/protokol.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от Министерства экономического развития Челябинской области"}
                             type={1}>
-                            <img src={'/images/reviews/econom.png'}
+                            <img src={'/images/reviews/econom.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Формула Безопасности – Урал”"}
                             type={1}>
-                            <img src={'/images/reviews/formula.png'}
+                            <img src={'/images/reviews/formula.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Группа ТРИЗ”"}
                             type={1}>
-                            <img src={'/images/reviews/tris.png'}
+                            <img src={'/images/reviews/tris.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Крепёжный Арсенал”"}
                             type={1}>
-                            <img src={'/images/reviews/krepezh.png'}
+                            <img src={'/images/reviews/krepezh.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Челтелекабель”"}
                             type={1}>
-                            <img src={'/images/reviews/cheltelecabel.png'}
+                            <img src={'/images/reviews/cheltelecabel.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ОГУК “Челябинское концертное объединение”"}
                             type={1}>
-                            <img src={'/images/reviews/concert.png'}
+                            <img src={'/images/reviews/concert.webp'}
                                  alt={"Благодарственное письмо"}
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
