@@ -40,7 +40,7 @@ export default function LicensesSlider2() {
                          className='mainp-sec5-licenses-img'/>
                 </Cart2>
                 <Cart2 heading={"ЧелРОП"}>
-                    <img src={'images/licensesPage/toleranceChelROP1.png'} alt={"license"}
+                    <img src={'images/licensesPage/tolerancechelrop1.webp'} alt={"license"}
                          className='mainp-sec5-licenses-img'/>
                 </Cart2>
             </Slider>

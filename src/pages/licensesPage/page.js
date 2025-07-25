@@ -17,27 +17,27 @@ export default function LicensesPage() {
             <div id='licensesp-container2'>
                 <Cart7 heading={'Лицензия МЧС'}>
                     <div className="licensesp-img1">
-                        <img src={'/images/licenses/mchs1.png'} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/mchs1.webp'} alt={"license"} className='licensesp-img'/>
                     </div>
                     <div className="licensesp-img2">
-                        <img src={'/images/licenses/mchs2.png'} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/mchs2.webp'} alt={"license"} className='licensesp-img'/>
                     </div>
                 </Cart7>
                 <Cart7 heading={'Допуски СРО'}>
                     <div className="licensesp-img1">
-                        <img src={'/images/licenses/sro1.png'} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/sro1.webp'} alt={"license"} className='licensesp-img'/>
                     </div>
                     <div className="licensesp-img2">
-                        <img src={'/images/licenses/sro3.png'} alt={"license"} className='licensesp-img'/>
+                        <img src={'/images/licenses/sro3.webp'} alt={"license"} className='licensesp-img'/>
                     </div>
                 </Cart7>
                 <Cart7 heading={'Допуски ЧелРОП'}>
                     <div className="licensesp-img1">
-                        <img src={'/images/licenses/chelrop1.png'} alt={"license"}
+                        <img src={'/images/licenses/chelrop1.webp'} alt={"license"}
                              className='licensesp-img'/>
                     </div>
                     <div className="licensesp-img2">
-                        <img src={'/images/licenses/chelrop2.png'} alt={"license"}
+                        <img src={'/images/licenses/chelrop2.webp'} alt={"license"}
                              className='licensesp-img'/>
                     </div>
                 </Cart7>

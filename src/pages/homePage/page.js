@@ -11,6 +11,7 @@ import Cart4 from "@/components/cart/4/cart4";
 
 export default function HomePage() {
     const videoRef = useRef(null);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -47,8 +48,8 @@ export default function HomePage() {
                 <video loop width="100%" autoPlay muted id='mainp-sec1-img' ref={videoRef}>
                     {/*<source src={"/video4.mov"}*/}
                     {/*        type='video/quicktime'/>*/}
-                    <source src='/logo.webm'
-                            type='video/webm'/>
+                    {isSafari ? <></> : <source src='/logo.webm'
+                                                type='video/webm'/>}
                 </video>
             </section>
             <section id="mainp-sec2">
@@ -59,7 +60,7 @@ export default function HomePage() {
                     {/*    российский<br/>*/}
                     {/*    интегратор систем безопасности и охраны объектов </p>*/}
                     <p className='fs12 mfs5 i-r'
-                       id='mainp-sec2-text'>{'“Компания «тСк» занимается разработкой концепций и внедрением современных систем безопасности предприятий. Мы оказываем услуги проектирования, поставки, монтажа и технического обслуживания различных систем, включая видеонаблюдение, охранно-пожарную сигнализацию, контроль доступа и пожаротушение. Основная цель компании — создание надежных интегрированных решений, обеспечивающих высокий уровень безопасности клиентов и экономию их ресурсов благодаря профессиональному обслуживанию'}</p>
+                       id='mainp-sec2-text'>{'Компания «тСк» занимается разработкой концепций и внедрением современных систем безопасности предприятий. Мы оказываем услуги проектирования, поставки, монтажа и технического обслуживания различных систем, включая видеонаблюдение, охранно-пожарную сигнализацию, контроль доступа и пожаротушение. Основная цель компании — создание надежных интегрированных решений, обеспечивающих высокий уровень безопасности клиентов и экономию их ресурсов благодаря профессиональному обслуживанию'}</p>
                 </div>
                 <div id='mainp-sec2-carts'>
                     <Cart1 heading={"год основания компании"} value={"2006"} type={1}
@@ -167,23 +168,23 @@ export default function HomePage() {
                         {/*     className='mainp-sec5-licensesPage-img'/>*/}
                         {/*<img src={'images/licensesPage/license2.png'} alt={"license"}*/}
                         {/*     className='mainp-sec5-licensesPage-img'/>*/}
-                        <img src={'/images/licenses/mchs1.png'} alt={"license"}
+                        <img src={'/images/licenses/mchs1.webp'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
-                        <img src={'/images/licenses/mchs2.png'} alt={"license"}
+                        <img src={'/images/licenses/mchs2.webp'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
                     </Cart2>
                     <Cart2 heading={"СРО"}
                            text={'Союз Строительных Компаний Урала и Сибири – свидетельство о членстве в строительной СРО'}>
-                        <img src={'/images/licenses/sro1.png'} alt={"license"}
+                        <img src={'/images/licenses/sro1.webp'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
-                        <img src={'/images/licenses/sro3.png'} alt={"license"}
+                        <img src={'/images/licenses/sro3.webp'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
                     </Cart2>
                     <Cart2 heading={"ЧелРОП"}
                            text={'Ассоциация СРО "Челябинское региональное объединение проектировщиков" – свидетельство о членстве в проектной СРО'}>
-                        <img src={'/images/licenses/chelrop1.png'} alt={"license"}
+                        <img src={'/images/licenses/chelrop1.webp'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
-                        <img src={'/images/licenses/chelrop2.png'} alt={"license"}
+                        <img src={'/images/licenses/chelrop2.webp'} alt={"license"}
                              className='mainp-sec5-licenses-img'/>
                     </Cart2>
                 </div>
