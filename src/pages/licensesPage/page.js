@@ -10,7 +10,9 @@ export default function LicensesPage() {
                 <div id='divid8'/>
                 <p id='casesp-container1-text'
                    className='fs5 mfs6 i-r'>{`Компания “тСк” обладает всеми требуемыми лицензиями и допусками для проведения проектных и монтажных работ в области систем безопасности.`}</p>
-                <button className='btn fs5 i-m up' id='licensesp-btn'>скачать лицензии и допуски</button>
+                <button className='btn fs5 i-m up' id='licensesp-btn'
+                        onClick={() => window.open("/tsk-licenses.rar", "_blank")}>скачать лицензии и допуски
+                </button>
             </div>
             <div id='licensesp-container2'>
                 <Cart7 heading={'Лицензия МЧС'}>

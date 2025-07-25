@@ -188,7 +188,9 @@ export default function HomePage() {
                     </Cart2>
                 </div>
                 <LicensesSlider/>
-                <button className='btn fs5 mfs6 i-m up' id='mainp-btn1'>↓ скачать лицензии и допуски</button>
+                <button className='btn fs5 mfs6 i-m up' id='mainp-btn1'
+                        onClick={() => window.open("/tsk-licenses.rar", "")}>↓ скачать лицензии и допуски
+                </button>
             </section>
             <section id='mainp-sec6'>
                 <h2 id='mainp-sec6-heading' className="main-grid fs3 mfs3 m-b up">отзывы</h2>
@@ -264,14 +266,7 @@ export default function HomePage() {
                                  className='mainp-sec6-reviews-img'/>
                         </Cart3>
                         <Cart3
-                            heading={"Благодарность от Государственного унитарного предприятия"}
-                            type={1}>
-                            <img src={'/images/reviews/'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
-                        </Cart3>
-                        <Cart3
-                            heading={"Челябинской области “Протокол”"}
+                            heading={"Благодарность от Государственного унитарного предприятия Челябинской области “Протокол”"}
                             type={1}>
                             <img src={'/images/reviews/protokol.png'}
                                  alt={"Благодарственное письмо"}

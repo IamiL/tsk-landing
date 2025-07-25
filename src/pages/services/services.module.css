@@ -26,10 +26,12 @@
 }
 
 .serviceImage {
+    object-fit: contain;
     width: 100%;
-    max-width: 600px;
+    max-height: calc(var(--1w) * 3);
     height: auto;
     border-radius: 8px;
+    display: flex;
 }
 
 .serviceDescription {

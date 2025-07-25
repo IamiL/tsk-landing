@@ -163,8 +163,8 @@
     display: flex;
     justify-content: space-between;
     max-height: 100%;
-    height: calc(var(--1w) * 0.4);
-    align-items: end;
+    /*height: calc(var(--1w) * 0.4);*/
+    align-items: start;
     padding-bottom: calc(var(--1w) * 0.07);
     padding-left: calc(var(--1w) * 0.07);
     padding-right: calc(var(--1w) * 0.07);
