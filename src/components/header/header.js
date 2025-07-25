@@ -48,7 +48,7 @@ export default function Header() {
                 {/*    </defs>*/}
                 {/*</svg>*/}
             </Link>
-            <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+            <Navbar isOpen={show && isOpen} setIsOpen={setIsOpen}/>
             <div className="menu-container">
                 <input type="checkbox" id="menu-toggle" className="menu-toggle" checked={isOpen}
                        onChange={() => {
