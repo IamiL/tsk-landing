@@ -1,5 +1,6 @@
 'use client';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
+import {useEffect, useRef} from "react";
 
 // import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
@@ -66,11 +67,35 @@ import ChelyabinskMetallurgicalCombineCasePage from "@/pages/cases/chelyabinsk-m
 // ]);
 
 
+function ScrollToTop() {
+    const location = useLocation();
+    const isBackNavigation = useRef(false);
+
+    useEffect(() => {
+        const handlePopState = () => {
+            isBackNavigation.current = true;
+        };
+
+        window.addEventListener('popstate', handlePopState);
+        return () => window.removeEventListener('popstate', handlePopState);
+    }, []);
+
+    useEffect(() => {
+        if (!isBackNavigation.current) {
+            window.scrollTo(0, 0);
+        }
+        isBackNavigation.current = false;
+    }, [location.pathname]);
+
+    return null;
+}
+
 export default function Csr() {
     return (
         typeof document !== 'undefined' &&
         <AppContextProvider>
             <BrowserRouter>
+                <ScrollToTop />
                 <Header/>
                 <main>
                     <Routes>

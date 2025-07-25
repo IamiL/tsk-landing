@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Slider from "react-slick";
 import Cart2 from "../cart/2/cart2";
+import ZoomableImage from "../imageViewer/ZoomableImage";
 import "./licensesMobile.css";
 
 export default function LicensesSlider() {
@@ -33,7 +34,11 @@ export default function LicensesSlider() {
         isMobile && <div id='mainp-sec5-licenses-mobile'>
             <Slider {...settings}>
                 <Cart2 heading={"Лицензия на монтаж и обслуживание систем пожарной безопасности"}>
-                    <img src={'images/licensesPage/license1.png'} alt={"license"} className='mainp-sec5-licenses-img'/>
+                    <ZoomableImage 
+                        src={'images/licensesPage/license1.png'} 
+                        alt={"Лицензия на монтаж и обслуживание систем пожарной безопасности"} 
+                        className='mainp-sec5-licenses-img'
+                    />
                 </Cart2>
                 <Cart2 heading={"Допуски СРО"}>
                     <img src={'images/licensesPage/toleranceSRO1.png'} alt={"license"}

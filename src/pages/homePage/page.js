@@ -5,6 +5,7 @@ import Cart2 from "../../components/cart/2/cart2";
 import Cart3 from "../../components/cart/3/cart3";
 import Carousel from "../../components/carousel/carousel";
 import LicensesSlider from "../../components/licensesSlider/licensesSlider";
+import ZoomableImage from "../../components/imageViewer/ZoomableImage";
 import Pause from "@/components/logo/Pause/pause";
 import {useEffect, useRef} from "react";
 import Cart4 from "@/components/cart/4/cart4";
@@ -164,28 +165,48 @@ export default function HomePage() {
                 <div id='mainp-sec5-licenses'>
                     <Cart2 heading={"Лицензия МЧС"}
                            text={'Лицензия на монтаж, ремонт и обслуживание средств обеспечения пожарной безопасности'}>
-                        {/*<img src={'images/licensesPage/license1.png'} alt={"license"}*/}
-                        {/*     className='mainp-sec5-licensesPage-img'/>*/}
-                        {/*<img src={'images/licensesPage/license2.png'} alt={"license"}*/}
-                        {/*     className='mainp-sec5-licensesPage-img'/>*/}
-                        <img src={'/images/licenses/mchs1.webp'} alt={"license"}
-                             className='mainp-sec5-licenses-img'/>
-                        <img src={'/images/licenses/mchs2.webp'} alt={"license"}
-                             className='mainp-sec5-licenses-img'/>
+                        <ZoomableImage
+                            src={'/images/licenses/mchs1.webp'}
+                            fullSizeSrc={'/images/licenses/mchs1-fullsize.webp'}
+                            alt={"Лицензия МЧС - страница 1"}
+                            className='mainp-sec5-licenses-img'
+                        />
+                        <ZoomableImage
+                            src={'/images/licenses/mchs2.webp'}
+                            fullSizeSrc={'/images/licenses/mchs2-fullsize.webp'}
+                            alt={"Лицензия МЧС - страница 2"}
+                            className='mainp-sec5-licenses-img'
+                        />
                     </Cart2>
                     <Cart2 heading={"СРО"}
                            text={'Союз Строительных Компаний Урала и Сибири – свидетельство о членстве в строительной СРО'}>
-                        <img src={'/images/licenses/sro1.webp'} alt={"license"}
-                             className='mainp-sec5-licenses-img'/>
-                        <img src={'/images/licenses/sro3.webp'} alt={"license"}
-                             className='mainp-sec5-licenses-img'/>
+                        <ZoomableImage
+                            src={'/images/licenses/sro1.webp'}
+                            fullSizeSrc={'/images/licenses/sro1-fullsize.webp'}
+                            alt={"СРО - страница 1"}
+                            className='mainp-sec5-licenses-img'
+                        />
+                        <ZoomableImage
+                            src={'/images/licenses/sro3.webp'}
+                            fullSizeSrc={'/images/licenses/sro3-fullsize.webp'}
+                            alt={"СРО - страница 2"}
+                            className='mainp-sec5-licenses-img'
+                        />
                     </Cart2>
                     <Cart2 heading={"ЧелРОП"}
                            text={'Ассоциация СРО "Челябинское региональное объединение проектировщиков" – свидетельство о членстве в проектной СРО'}>
-                        <img src={'/images/licenses/chelrop1.webp'} alt={"license"}
-                             className='mainp-sec5-licenses-img'/>
-                        <img src={'/images/licenses/chelrop2.webp'} alt={"license"}
-                             className='mainp-sec5-licenses-img'/>
+                        <ZoomableImage
+                            src={'/images/licenses/chelrop1.webp'}
+                            fullSizeSrc={'/images/licenses/chelrop1-fullsize.webp'}
+                            alt={"ЧелРОП - страница 1"}
+                            className='mainp-sec5-licenses-img'
+                        />
+                        <ZoomableImage
+                            src={'/images/licenses/chelrop2.webp'}
+                            fullSizeSrc={'/images/licenses/chelrop2-fullsize.webp'}
+                            alt={"ЧелРОП - страница 2"}
+                            className='mainp-sec5-licenses-img'
+                        />
                     </Cart2>
                 </div>
                 <LicensesSlider/>
@@ -205,115 +226,164 @@ export default function HomePage() {
                         {/*         className='mainp-sec6-reviewsPage-img'/>*/}
                         {/*</Cart3>*/}
                         <Cart3
-                            heading={"Благодарность от ООО “Урало-Сибирская электротехническая компания”"}
+                            heading={'Благодарность от ООО «Урало-Сибирская электротехническая компания»'}
                             type={1}>
-                            <img src={'/images/reviews/Ural-Siberian-Electrotechnical-Company.webp'} alt={"review"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/Ural-Siberian-Electrotechnical-Company.webp'}
+                                fullSizeSrc={'/images/reviews/Ural-Siberian-Electrotechnical-Company.png'}
+                                alt={"Благодарность от ООО «Урало-Сибирская электротехническая компания»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
-                            heading={"Благодарность от ООО “УГМК-Телеком”"}
+                            heading={"Благодарность от ООО «УГМК-Телеком»"}
                             type={1}>
-                            <img src={'/images/reviews/UMMC-Telecom.webp'}
-                                 alt={"Благодарственное письмо от Челябинского концертного объединения"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/UMMC-Telecom.webp'}
+                                fullSizeSrc={'/images/reviews/UMMC-Telecom-fullsize.webp'}
+                                alt={"Благодарность от ООО «УГМК-Телеком»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Аларм”"}
                             type={1}>
-                            <img src={'/images/reviews/alarm.webp'}
-                                 alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/alarm.webp'}
+                                fullSizeSrc={'/images/reviews/alarm-fullsize.webp'}
+                                alt={"Благодарность от ООО «Аларм»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ОАО “ЧМК”"}
                             type={1}>
-                            <img src={'/images/reviews/mechel.webp'}
-                                 alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/mechel.webp'}
+                                fullSizeSrc={'/images/reviews/mechel-fullsize.webp'}
+                                alt={"Благодарность от ОАО «ЧМК»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от Управления по обустройству государственной границы Российской Федерации"}
                             type={1}>
-                            <img src={'/images/reviews/state-border.webp'}
-                                 alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/state-border.webp'}
+                                fullSizeSrc={'/images/reviews/state-border-fullsize.webp'}
+                                alt={"Благодарность от Управления по обустройству государственной границы РФ"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ОАО “Kemma”"}
                             type={1}>
-                            <img src={'/images/reviews/kemma.webp'}
-                                 alt={"Благодарственное письмо от ООО \"Челтелекабель\""}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/kemma.webp'}
+                                fullSizeSrc={'/images/reviews/kemma-fullsize.webp'}
+                                alt={"Благодарность от ОАО «Kemma»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"  Благодарность от ОАО “Челябинский цинковый завод”"}
                             type={1}>
-                            <img src={'/images/reviews/cink.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/cink.webp'}
+                                fullSizeSrc={'/images/reviews/cink-fullsize.webp'}
+                                alt={"Благодарность от ОАО «Челябинский цинковый завод»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО МПК “Ромкор”"}
                             type={1}>
-                            <img src={'/images/reviews/romkor.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/romkor.webp'}
+                                fullSizeSrc={'/images/reviews/romkor-fullsize.webp'}
+                                alt={"Благодарность от ООО МПК «Ромкор»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Виола Арт”"}
                             type={1}>
-                            <img src={'/images/reviews/viola.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/viola.webp'}
+                                fullSizeSrc={'/images/reviews/viola-fullsize.webp'}
+                                alt={"Благодарность от ООО «Виола Арт»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от Государственного унитарного предприятия Челябинской области “Протокол”"}
                             type={1}>
-                            <img src={'/images/reviews/protokol.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/protokol.webp'}
+                                fullSizeSrc={'/images/reviews/protokol-fullsize.webp'}
+                                alt={"Благодарность от ГУП Челябинской области «Протокол»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от Министерства экономического развития Челябинской области"}
                             type={1}>
-                            <img src={'/images/reviews/econom.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/econom.webp'}
+                                fullSizeSrc={'/images/reviews/econom-fullsize.webp'}
+                                alt={"Благодарность от Министерства экономического развития Челябинской области"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Формула Безопасности – Урал”"}
                             type={1}>
-                            <img src={'/images/reviews/formula.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/formula.webp'}
+                                fullSizeSrc={'/images/reviews/formula-fullsize.webp'}
+                                alt={"Благодарность от ООО «Формула Безопасности – Урал»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Группа ТРИЗ”"}
                             type={1}>
-                            <img src={'/images/reviews/tris.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/tris.webp'}
+                                fullSizeSrc={'/images/reviews/tris-fullsize.webp'}
+                                alt={"Благодарность от ООО «Группа ТРИЗ»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Крепёжный Арсенал”"}
                             type={1}>
-                            <img src={'/images/reviews/krepezh.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/krepezh.webp'}
+                                fullSizeSrc={'/images/reviews/krepezh-fullsize.webp'}
+                                alt={"Благодарность от ООО «Крепёжный Арсенал»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ООО “Челтелекабель”"}
                             type={1}>
-                            <img src={'/images/reviews/cheltelecabel.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/cheltelecabel.webp'}
+                                fullSizeSrc={'/images/reviews/cheltelecabel-fullsize.webp'}
+                                alt={"Благодарность от ООО «Челтелекабель»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                         <Cart3
                             heading={"Благодарность от ОГУК “Челябинское концертное объединение”"}
                             type={1}>
-                            <img src={'/images/reviews/concert.webp'}
-                                 alt={"Благодарственное письмо"}
-                                 className='mainp-sec6-reviews-img'/>
+                            <ZoomableImage
+                                src={'/images/reviews/concert.webp'}
+                                fullSizeSrc={'/images/reviews/concert-fullsize.webp'}
+                                alt={"Благодарность от ОГУК «Челябинское концертное объединение»"}
+                                className='mainp-sec6-reviews-img'
+                            />
                         </Cart3>
                     </Carousel>
                 </div>
