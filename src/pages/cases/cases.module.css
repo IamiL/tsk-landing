@@ -1,0 +1,21 @@
+.caseSection {
+    width: var(--100w);
+}
+
+.caseContainer {
+    /* Container for divider and subtitle */
+}
+
+.divider {
+    width: 100%;
+    height: calc(var(--1w) * 0.4);
+    border-top: 1px solid rgba(247, 247, 247, 0.75);
+    border-right: 1px solid rgba(247, 247, 247, 0.75);
+}
+
+.caseImage {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}

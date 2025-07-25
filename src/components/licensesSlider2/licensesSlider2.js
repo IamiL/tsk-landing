@@ -36,10 +36,11 @@ export default function LicensesSlider2() {
                     <img src={'/not-found2.png'} alt={"license"} className='mainp-sec5-licenses-img'/>
                 </Cart2>
                 <Cart2 heading={"СРО"}>
-                    <img src={'images/licenses/toleranceSRO1.png'} alt={"license"} className='mainp-sec5-licenses-img'/>
+                    <img src={'images/licensesPage/toleranceSRO1.png'} alt={"license"}
+                         className='mainp-sec5-licenses-img'/>
                 </Cart2>
                 <Cart2 heading={"ЧелРОП"}>
-                    <img src={'images/licenses/toleranceChelROP1.png'} alt={"license"}
+                    <img src={'images/licensesPage/toleranceChelROP1.png'} alt={"license"}
                          className='mainp-sec5-licenses-img'/>
                 </Cart2>
             </Slider>

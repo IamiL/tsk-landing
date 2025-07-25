@@ -9,7 +9,8 @@ export default function Navbar({isOpen, setIsOpen}) {
                      onClick={() => setIsOpen(false)}>
                 о компании
             </NavLink>
-            <NavLink to={"/services"} className={({isActive}) => (`fs8 i-b ${isActive ? 'navbar-active-link' : ''}`)}
+            <NavLink to={"/services"}
+                     className={({isActive}) => (`fs8 i-b ${isActive ? 'navbar-active-link' : ''}`)}
                      onClick={() => setIsOpen(false)}>
                 услуги
             </NavLink>
@@ -17,7 +18,8 @@ export default function Navbar({isOpen, setIsOpen}) {
                      onClick={() => setIsOpen(false)}>
                 проекты
             </NavLink>
-            <NavLink to={"/licenses"} className={({isActive}) => (`fs8 i-b ${isActive ? 'navbar-active-link' : ''}`)}
+            <NavLink to={"/licenses"}
+                     className={({isActive}) => (`fs8 i-b ${isActive ? 'navbar-active-link' : ''}`)}
                      onClick={() => setIsOpen(false)}>
                 лицензии
             </NavLink>
@@ -25,7 +27,8 @@ export default function Navbar({isOpen, setIsOpen}) {
                      onClick={() => setIsOpen(false)}>
                 отзывы
             </NavLink>
-            <NavLink to={"/contacts"} className={({isActive}) => (`fs8 i-b ${isActive ? 'navbar-active-link' : ''}`)}
+            <NavLink to={"/contacts"}
+                     className={({isActive}) => (`fs8 i-b ${isActive ? 'navbar-active-link' : ''}`)}
                      onClick={() => setIsOpen(false)}>
                 контакты
             </NavLink>

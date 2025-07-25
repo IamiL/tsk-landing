@@ -33,13 +33,15 @@ export default function LicensesSlider() {
         isMobile && <div id='mainp-sec5-licenses-mobile'>
             <Slider {...settings}>
                 <Cart2 heading={"Лицензия на монтаж и обслуживание систем пожарной безопасности"}>
-                    <img src={'images/licenses/license1.png'} alt={"license"} className='mainp-sec5-licenses-img'/>
+                    <img src={'images/licensesPage/license1.png'} alt={"license"} className='mainp-sec5-licenses-img'/>
                 </Cart2>
                 <Cart2 heading={"Допуски СРО"}>
-                    <img src={'images/licenses/toleranceSRO1.png'} alt={"license"} className='mainp-sec5-licenses-img'/>
+                    <img src={'images/licensesPage/toleranceSRO1.png'} alt={"license"}
+                         className='mainp-sec5-licenses-img'/>
                 </Cart2>
                 <Cart2 heading={"Допуски ЧелРОП"}>
-                    <img src={'images/licenses/toleranceSRO2.png'} alt={"license"} className='mainp-sec5-licenses-img'/>
+                    <img src={'images/licensesPage/toleranceSRO2.png'} alt={"license"}
+                         className='mainp-sec5-licenses-img'/>
                 </Cart2>
             </Slider>
         </div>

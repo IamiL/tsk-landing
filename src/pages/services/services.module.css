@@ -1,0 +1,37 @@
+.servicePage {
+    /* Removed padding, will be handled by section */
+}
+
+.serviceSection {
+    width: var(--100w);
+}
+
+.serviceTitle {
+    /* Will use same classes as other pages: fs3 mfs3 m-b */
+}
+
+.serviceContainer {
+    /* Container for divider and subtitle */
+}
+
+.divider {
+    width: 100%;
+    height: calc(var(--1w) * 0.4);
+    border-top: 1px solid rgba(247, 247, 247, 0.75);
+    border-right: 1px solid rgba(247, 247, 247, 0.75);
+}
+
+.serviceMainContent {
+    /* Main content area with main-grid class */
+}
+
+.serviceImage {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.serviceDescription {
+    /* Will use fs5 mfs6 i-r classes like other pages */
+}

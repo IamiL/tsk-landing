@@ -42,39 +42,39 @@ export default function MobileNavbar({setVisible}) {
         </div>
         <nav id='mobile-nav' className={`${isOpen ? 'mobile-nav-open' : 'mobile-nav-close'}`}>
             <div id='navbar-block'>
-                <NavLink to={"/about"}
+                <NavLink to={"/aboutPage"}
                          onClick={() => setIsOpen(false)}
                          className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}
                          style={{whiteSpace: "nowrap"}}>
                     о компании
                 </NavLink>
-                <NavLink to={"/services"}
+                <NavLink to={"/servicesPage"}
                          onClick={() => setIsOpen(false)}
                          className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
                     услуги
                 </NavLink>
-                <NavLink to={"/cases"}
+                <NavLink to={"/casesPage"}
                          onClick={() => setIsOpen(false)}
                          className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
                     проекты
                 </NavLink>
-                <NavLink to={"/licenses"}
+                <NavLink to={"/licensesPage"}
                          onClick={() => setIsOpen(false)}
                          className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
                     лицензии
                 </NavLink>
-                <NavLink to={"/reviews"}
+                <NavLink to={"/reviewsPage"}
                          onClick={() => setIsOpen(false)}
                          className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
                     отзывы
                 </NavLink>
-                <NavLink to={"/contacts"}
+                <NavLink to={"/contactsPage"}
                          onClick={() => setIsOpen(false)}
                          className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
                     контакты
                 </NavLink>
             </div>
-            <Link to={"/contactus"} className="fs8 mfs4 i-b"
+            <Link to={"/contactusPage"} className="fs8 mfs4 i-b"
                   onClick={() => setIsOpen(false)}>
                 связаться
             </Link>
