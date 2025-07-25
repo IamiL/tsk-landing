@@ -3,6 +3,7 @@ import Navbar from "../navbar/navbar";
 import {Link} from "react-router-dom";
 import {useAppContext} from "@/context/context";
 import useVisibleHook from "@/components/header/scroll";
+import {useEffect} from "react";
 
 export default function Header() {
     // const [animIsPlayed, setAnimIsPlayed] = useState(true);
@@ -10,6 +11,14 @@ export default function Header() {
     const {isOpen, setIsOpen} = useAppContext();
     const show = useVisibleHook();
     // const locationRouter = useLocation();
+
+    useEffect(() => {
+        if (!show) {
+            if (isOpen) {
+                setIsOpen(false);
+            }
+        }
+    }, [show])
 
 
     // return <header id={`${(locationRouter.pathname === "/" && animIsPlayed) ? 'header-start' : ''}`}
@@ -48,7 +57,7 @@ export default function Header() {
                 {/*    </defs>*/}
                 {/*</svg>*/}
             </Link>
-            <Navbar isOpen={show && isOpen} setIsOpen={setIsOpen}/>
+            <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
             <div className="menu-container">
                 <input type="checkbox" id="menu-toggle" className="menu-toggle" checked={isOpen}
                        onChange={() => {

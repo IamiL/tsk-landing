@@ -25,8 +25,8 @@ export default function ServicesSlider() {
         centerMode: true,
         centerPadding: '1px',
         swipeToSlide: true,
-        prevArrow: <></>,
-        nextArrow: <></>
+        prevArrow: <div style={{display: 'none'}} />,
+        nextArrow: <div style={{display: 'none'}} />
     };
 
     return (

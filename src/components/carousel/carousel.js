@@ -27,8 +27,8 @@ export default function Carousel({children}) {
         centerMode: true,
         centerPadding: '1px',
         swipeToSlide: true,
-        prevArrow: <></>,
-        nextArrow: <></>
+        prevArrow: <div style={{display: 'none'}} />,
+        nextArrow: <div style={{display: 'none'}} />
     } : {
         dots: true, // Показывать точки навигации
         infinite: true, // Зациклить слайды
@@ -38,8 +38,8 @@ export default function Carousel({children}) {
         autoplay: true, // Автоматическая прокрутка
         autoplaySpeed: 4000, // Скорость автоматической прокрутки в миллисекундах
         arrows: false,
-        prevArrow: <></>,
-        nextArrow: <></>
+        prevArrow: <div style={{display: 'none'}} />,
+        nextArrow: <div style={{display: 'none'}} />
     };
 
     return (

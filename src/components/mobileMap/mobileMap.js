@@ -17,8 +17,8 @@ export default function MobileMap() {
         centerMode: true,
         centerPadding: '0px',
         swipeToSlide: true,
-        prevArrow: <></>,
-        nextArrow: <></>,
+        prevArrow: <div style={{display: 'none'}}/>,
+        nextArrow: <div style={{display: 'none'}}/>,
         beforeChange: (current, next) => {
             setActiveCardIndex(next);
         }

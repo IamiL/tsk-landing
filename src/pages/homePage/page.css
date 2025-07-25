@@ -320,7 +320,10 @@
     }
 
     .mainp-sec3-services {
+        display: flex;
+        flex-direction: column;
         margin-top: calc(var(--1w) * 0.35);
+        gap: calc(var(--1g));
     }
 
     #divid7 {
@@ -410,6 +413,11 @@
         display: flex;
         flex-direction: column;
         gap: var(--1g);
+    }
+
+    #mainp-sec6-reviews .slick-dots > li, #mainp-sec6-reviews .slick-dots > li > button, #mainp-sec6-reviews .slick-dots > li > button::before {
+        width: 13px;
+        height: 13px;
     }
 
     .mainp-sec6-reviews-img {

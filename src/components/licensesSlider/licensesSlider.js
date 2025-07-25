@@ -26,27 +26,36 @@ export default function LicensesSlider() {
         centerMode: true,
         centerPadding: '1px',
         swipeToSlide: true,
-        prevArrow: <></>,
-        nextArrow: <></>
+        prevArrow: <div style={{display: 'none'}} />,
+        nextArrow: <div style={{display: 'none'}} />
     };
 
     return (
         isMobile && <div id='mainp-sec5-licenses-mobile'>
             <Slider {...settings}>
-                <Cart2 heading={"Лицензия на монтаж и обслуживание систем пожарной безопасности"}>
-                    <ZoomableImage 
-                        src={'images/licensesPage/license1.png'} 
-                        alt={"Лицензия на монтаж и обслуживание систем пожарной безопасности"} 
+                <Cart2 heading={"Лицензия МЧС"}>
+                    <ZoomableImage
+                        src={'/images/licenses/mchs1.webp'}
+                        fullSizeSrc={'/images/licenses/mchs1-fullsize.webp'}
+                        alt={"Лицензия на монтаж и обслуживание систем пожарной безопасности"}
                         className='mainp-sec5-licenses-img'
                     />
                 </Cart2>
-                <Cart2 heading={"Допуски СРО"}>
-                    <img src={'images/licensesPage/toleranceSRO1.png'} alt={"license"}
-                         className='mainp-sec5-licenses-img'/>
+                <Cart2 heading={"Членство в Союзе Строительных Компаний Урала и Сибири"}>
+                    <ZoomableImage
+                        src={'/images/licenses/sro1.webp'}
+                        fullSizeSrc={'/images/licenses/sro1-fullsize.webp'}
+                        alt={"СРО - страница 1"}
+                        className='mainp-sec5-licenses-img'
+                    />
                 </Cart2>
-                <Cart2 heading={"Допуски ЧелРОП"}>
-                    <img src={'images/licensesPage/toleranceSRO2.png'} alt={"license"}
-                         className='mainp-sec5-licenses-img'/>
+                <Cart2 heading={"Членство в «Челябинском региональном объединении проектировщиков»"}>
+                    <ZoomableImage
+                        src={'/images/licenses/chelrop1.webp'}
+                        fullSizeSrc={'/images/licenses/chelrop1-fullsize.webp'}
+                        alt={"ЧелРОП - страница 1"}
+                        className='mainp-sec5-licenses-img'
+                    />
                 </Cart2>
             </Slider>
         </div>

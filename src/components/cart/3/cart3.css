@@ -57,6 +57,7 @@
 
     .cart3t1-container-text {
         height: calc(var(--svh) * 14.319247);
+        margin-top: calc(var(--svh) * 0.319247);
     }
 
     .cart3t1-children {

@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import "./cart4.css"
 
-export default function Cart4({heading, value, link, mainClassName}) {
+export default function Cart4({heading, value, link, mainClassName, ...rest}) {
     return <div className={mainClassName}>
         <h2 className='fs12 mfs4 i-m cart4-heading'>{heading}</h2>
         <p className='fs13 mfs6 i-m cart4-value'>{value}</p>

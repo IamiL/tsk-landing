@@ -25,8 +25,8 @@ export default function LicensesSlider2() {
         centerMode: true,
         centerPadding: '1px',
         swipeToSlide: true,
-        prevArrow: <></>,
-        nextArrow: <></>
+        prevArrow: <div style={{display: 'none'}} />,
+        nextArrow: <div style={{display: 'none'}} />
     };
 
     return (
