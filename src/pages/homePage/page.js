@@ -6,28 +6,10 @@ import Cart3 from "../../components/cart/3/cart3";
 import Carousel from "../../components/carousel/carousel";
 import LicensesSlider from "../../components/licensesSlider/licensesSlider";
 import ZoomableImage from "../../components/imageViewer/ZoomableImage";
-import Pause from "@/components/logo/Pause/pause";
-import {useEffect, useRef} from "react";
+import AutoplayVideo from "../../components/AutoplayVideo/AutoplayVideo";
 import Cart4 from "@/components/cart/4/cart4";
 
 export default function HomePage() {
-    const videoRef = useRef(null);
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            if (videoRef.current) {
-                try {
-                    videoRef.current.play();
-                } catch (error) {
-                    console.error("Ошибка воспроизведения видео:", error);
-                    // Можно добавить обработку ошибок, например, показать сообщение пользователю или попробовать другие методы
-                }
-            }
-        }, 2000); // 2000 миллисекунд = 2 секунды
-
-        return () => clearInterval(intervalId); // Очистка интервала при размонтировании компонента
-    }, []);
 
     return (
         <>
@@ -44,14 +26,12 @@ export default function HomePage() {
                     className='br1'/>
                     <span id="h1-2padding">партнёрство</span><br className='br1'/><span
                         id="h1-3padding">лучших</span></h1>
-                {/*<Logo1 id={"mainp-sec1-img"}/>*/}
-                <Pause/>
-                <video loop width="100%" autoPlay muted id='mainp-sec1-img' ref={videoRef}>
-                    {/*<source src={"/video4.mov"}*/}
-                    {/*        type='video/quicktime'/>*/}
-                    {isSafari ? <></> : <source src='/logo.webm'
-                                                type='video/webm'/>}
-                </video>
+                <AutoplayVideo 
+                    src="/logo.webm"
+                    id="mainp-sec1-img"
+                    width="100%"
+                    detectSafari={true}
+                />
             </section>
             <section id="mainp-sec2">
                 <h2 className="fs3 mfs3 m-b up" id='mainp-sec2-heading'>о компании</h2>
