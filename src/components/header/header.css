@@ -11,9 +11,44 @@ header {
     margin-bottom: calc(var(--1w) * 0.7);
 }
 
+#header-start + main > #mainp-sec1 {
+    animation-name: start-mainp-sec1-animation;
+    animation-duration: 10s;
+}
+
+@keyframes start-mainp-sec1-animation {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#header-start #desktop-nav {
+    animation-name: start-navbar-animation;
+    animation-duration: 10s;
+}
+
+@keyframes start-navbar-animation {
+    0% {
+        transform: translateY(-150%);
+    }
+    90% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 #logo {
     grid-column-start: 1;
     grid-column-end: 4;
+    --start-animation-duration: 10s;
     --mainOffset1X: calc(calc(var(--1w) * 6) - calc(var(--1w) * 1.5));
     --mainOffset1Y: calc(100vh / 2 - calc(var(--1w) * .593284 * 5 / 2) - calc(var(--1w) * .179104));
     --mainScale: 3;
@@ -33,21 +68,115 @@ header {
     font-size: calc(var(--1w) / 1.2);
 }
 
-#logo-img {
+#header-start > #header > #logo > #logo-img {
     overflow: visible;
-    transform: translate3d(var(--mainOffset1X), var(--mainOffset1Y), 0) scale(var(--mainScale));
+    animation-name: start-logo-animation;
+    animation-duration: var(--start-animation-duration);
 }
 
-#logo-img > #path1, #logo-img > #path2, #logo-img > #path3 {
-    transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+@keyframes start-logo-animation {
+    0% {
+        transform: translate3d(var(--mainOffset1X), var(--mainOffset1Y), 0) scale(var(--mainScale));
+    }
+    80% {
+        transform: translate3d(var(--mainOffset1X), var(--mainOffset1Y), 0) scale(var(--mainScale));
+    }
+    100% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
 }
 
-#logo-img > #path5 {
-    transform: translate3d(var(--logoText1X), var(--logoText1Y), 0);
+#header-start > #header > #logo > #logo-img > #path1, #header-start > #header > #logo > #logo-img > #path2, #header-start > #header > #logo > #logo-img > #path3 {
+    animation-name: start-icon-animation;
+    animation-duration: var(--start-animation-duration);
 }
 
-#logo-img > #path4 {
-    transform: translate3d(var(--logoText2X), var(--logoText2Y), 0);
+@keyframes start-icon-animation {
+    0% {
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+    }
+    80% {
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+#header-start > #header > #logo > #logo-img > #path5 {
+    animation-name: start-text1-animation;
+    animation-duration: var(--start-animation-duration);
+}
+
+@keyframes start-text1-animation {
+    0% {
+        transform: translate3d(var(--logoText1X), var(--logoText1Y), 0);
+    }
+    80% {
+        transform: translate3d(var(--logoText1X), var(--logoText1Y), 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#header-start > #header > #logo > #logo-img > #path4 {
+    animation-name: start-text2-animation;
+    animation-duration: var(--start-animation-duration);
+}
+
+@keyframes start-text2-animation {
+    0% {
+        transform: translate3d(var(--logoText2X), var(--logoText2Y), 0);
+    }
+    80% {
+        transform: translate3d(var(--logoText2X), var(--logoText2Y), 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#header-start > #header > #logo > #logo-img > #path1 {
+    animation-name: start-element1-animation;
+    animation-duration: var(--start-animation-duration);
+}
+
+@keyframes start-element1-animation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+
+#header-start > #header > #logo > #logo-img > #path2 {
+    animation-name: start-element2-animation;
+    animation-duration: var(--start-animation-duration);
+}
+
+@keyframes start-element2-animation {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+}
+
+#header-start > #header > #logo > #logo-img > #path3 {
+    animation-name: start-element3-animation;
+    animation-duration: var(--start-animation-duration);
+}
+
+@keyframes start-element3-animation {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
 }
 
 /*@media (min-width: 768px) {*/
