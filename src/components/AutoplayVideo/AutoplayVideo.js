@@ -110,7 +110,7 @@ const AutoplayVideo = ({
         >
             {isSafari &&
                 <source
-                    src={"/video.mov"}
+                    src={"/tsk.mov"}
                     type="video/mp4"
                 />
             }
