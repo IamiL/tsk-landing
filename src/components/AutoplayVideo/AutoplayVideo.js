@@ -1,13 +1,13 @@
-import React, { useRef, useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 
-const AutoplayVideo = ({ 
-    src, 
-    className = '', 
-    id = '', 
-    fallbackSrc = null,
-    detectSafari = false,
-    ...props 
-}) => {
+const AutoplayVideo = ({
+                           src,
+                           className = '',
+                           id = '',
+                           fallbackSrc = null,
+                           detectSafari = false,
+                           ...props
+                       }) => {
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -76,7 +76,7 @@ const AutoplayVideo = ({
                 });
             } else {
                 // Если видео еще не загружено, ждем события loadeddata
-                video.addEventListener('loadeddata', handleLoadedData, { once: true });
+                video.addEventListener('loadeddata', handleLoadedData, {once: true});
             }
         };
 
@@ -98,24 +98,30 @@ const AutoplayVideo = ({
     const isSafari = detectSafari ? /^((?!chrome|android).)*safari/i.test(navigator.userAgent) : false;
 
     return (
-        <video 
+        <video
             ref={videoRef}
-            loop 
-            autoPlay 
-            muted 
+            loop
+            autoPlay
+            muted
             playsInline
             className={className}
             id={id}
             {...props}
         >
+            {isSafari &&
+                <source
+                    src={"/video.mov"}
+                    type="video/mp4"
+                />
+            }
             {/* Основной источник видео */}
-            {src && <source src={src} type="video/webm" />}
-            
+            {!isSafari && src && <source src={src} type="video/webm"/>}
+
             {/* Fallback для Safari или других браузеров */}
-            {fallbackSrc && !isSafari && (
-                <source src={fallbackSrc} type="video/mp4" />
+            {!isSafari && fallbackSrc && (
+                <source src={fallbackSrc} type="video/mp4"/>
             )}
-            
+
             {/* Сообщение для браузеров без поддержки видео */}
             <p>Ваш браузер не поддерживает воспроизведение видео.</p>
         </video>
