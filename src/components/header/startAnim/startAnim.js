@@ -1,8 +1,7 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 
-export default function StartAnim({setAnim, pathname}) {
+export default function StartAnim({anim, setAnim, pathname}) {
     const [isClient, setIsClient] = useState(false);
-    const hasAnimationPlayed = useRef(false);
 
     useEffect(() => {
         setIsClient(true);
@@ -11,11 +10,9 @@ export default function StartAnim({setAnim, pathname}) {
     useEffect(() => {
         if (!isClient) return;
 
-        if (pathname === "/" && !hasAnimationPlayed.current) {
+        if (pathname === "/" && anim) {
             // Первый заход на главную страницу
-            hasAnimationPlayed.current = true;
             window.scrollTo({top: 0});
-            setAnim(true);
 
             // Блокируем скролл
             document.body.style.overflow = "hidden";

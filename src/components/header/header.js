@@ -24,8 +24,8 @@ export default function Header() {
 
     // return <header id={`${(locationRouter.pathname === "/" && animIsPlayed) ? 'header-start' : ''}`}
     return <header className={`${show ? '' : 'header-not-visible'}`}
-                   id={(locationRouter.pathname === "/" && animIsPlayed) ? 'header-start' : ''}>
-        <StartAnim setAnim={setAnimIsPlayed} pathname={locationRouter.pathname}/>
+                   id={animIsPlayed ? 'header-start' : ''}>
+        <StartAnim anim={animIsPlayed} setAnim={setAnimIsPlayed} pathname={locationRouter.pathname}/>
         <div id="header" className='main-grid'>
             {/*<div id="start-background"/>*/}
             <Link to={"/"} id="logo">
