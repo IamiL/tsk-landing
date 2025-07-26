@@ -601,6 +601,21 @@ header {
         --mobile-mainOffsetY: calc(50vh - calc(var(--svh) * 9 / 2) - calc(var(--mobile-logoHeight) / 2));
     }
 
+    /* Специальные фиксы для Safari */
+    @supports (-webkit-touch-callout: none) {
+        #header-start #logo {
+            --mobile-mainOffsetX: calc(50vw - 33vw + 5px);
+            --mobile-mainOffsetY: calc(50vh - 19.5vw - 19.5vw);
+            --mobile-scale: 1.4;
+            --logoIconX: 25%;
+            --logoIconScale: 1.8;
+            --logoText1X: -10%;
+            --logoText1Y: 140%;
+            --logoText2X: -10%;
+            --logoText2Y: 140%;
+        }
+    }
+
     #header-start > #header > #logo > #logo-img {
         animation-name: start-logo-mobile-animation;
         animation-duration: var(--start-animation-duration);
