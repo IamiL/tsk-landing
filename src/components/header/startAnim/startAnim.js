@@ -32,6 +32,7 @@ export default function StartAnim({setAnim, pathname}) {
             };
         } else {
             // Не главная страница или анимация уже проигрывалась
+            document.body.style.overflow = "visible";
             setAnim(false);
         }
     }, [isClient, pathname, setAnim]);

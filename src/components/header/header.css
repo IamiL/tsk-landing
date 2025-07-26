@@ -13,7 +13,8 @@ header {
 
 #header-start + main > #mainp-sec1 {
     animation-name: start-mainp-sec1-animation;
-    animation-duration: 10s;
+    animation-duration: 7.5s;
+    transition-timing-function: ease;
 }
 
 @keyframes start-mainp-sec1-animation {
@@ -30,14 +31,15 @@ header {
 
 #header-start #desktop-nav {
     animation-name: start-navbar-animation;
-    animation-duration: 10s;
+    animation-duration: 7.5s;
+    transition-timing-function: ease;
 }
 
 @keyframes start-navbar-animation {
     0% {
         transform: translateY(-150%);
     }
-    90% {
+    87% {
         transform: translateY(-150%);
     }
     100% {
@@ -48,7 +50,7 @@ header {
 #logo {
     grid-column-start: 1;
     grid-column-end: 4;
-    --start-animation-duration: 10s;
+    --start-animation-duration: 7.5s;
     --mainOffset1X: calc(calc(var(--1w) * 6) - calc(var(--1w) * 1.5));
     --mainOffset1Y: calc(100vh / 2 - calc(var(--1w) * .593284 * 5 / 2) - calc(var(--1w) * .179104));
     --mainScale: 3;
@@ -78,8 +80,11 @@ header {
     0% {
         transform: translate3d(var(--mainOffset1X), var(--mainOffset1Y), 0) scale(var(--mainScale));
     }
-    80% {
+    66.6% {
         transform: translate3d(var(--mainOffset1X), var(--mainOffset1Y), 0) scale(var(--mainScale));
+    }
+    85% {
+        transform: translate3d(0, 0, 0) scale(1);
     }
     100% {
         transform: translate3d(0, 0, 0) scale(1);
@@ -87,16 +92,19 @@ header {
 }
 
 #header-start > #header > #logo > #logo-img > #path1, #header-start > #header > #logo > #logo-img > #path2, #header-start > #header > #logo > #logo-img > #path3 {
-    animation-name: start-icon-animation;
-    animation-duration: var(--start-animation-duration);
+    /*animation-name: start-icon-animation;*/
+    /*animation-duration: var(--start-animation-duration);*/
 }
 
 @keyframes start-icon-animation {
     0% {
         transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
     }
-    80% {
+    66.6% {
         transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+    }
+    85% {
+        transform: translateX(0) scale(1);
     }
     100% {
         transform: translateX(0) scale(1);
@@ -110,10 +118,18 @@ header {
 
 @keyframes start-text1-animation {
     0% {
+        opacity: 0;
         transform: translate3d(var(--logoText1X), var(--logoText1Y), 0);
     }
-    80% {
+    53.3% {
+        opacity: 0;
+    }
+    66.6% {
+        opacity: 1;
         transform: translate3d(var(--logoText1X), var(--logoText1Y), 0);
+    }
+    85% {
+        transform: translate3d(0, 0, 0);
     }
     100% {
         transform: translate3d(0, 0, 0);
@@ -127,10 +143,20 @@ header {
 
 @keyframes start-text2-animation {
     0% {
+        opacity: 0;
         transform: translate3d(var(--logoText2X), var(--logoText2Y), 0);
     }
-    80% {
+    39.9999999999% {
+        opacity: 0;
+    }
+    53.3% {
+        opacity: 1;
+    }
+    66.6% {
         transform: translate3d(var(--logoText2X), var(--logoText2Y), 0);
+    }
+    85% {
+        transform: translate3d(0, 0, 0);
     }
     100% {
         transform: translate3d(0, 0, 0);
@@ -145,9 +171,19 @@ header {
 @keyframes start-element1-animation {
     0% {
         opacity: 0;
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
     }
-    10% {
+    13.3333333333% {
         opacity: 1;
+    }
+    66.6% {
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+    }
+    85% {
+        transform: translateX(0) scale(1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
     }
 }
 
@@ -159,9 +195,22 @@ header {
 @keyframes start-element2-animation {
     0% {
         opacity: 0;
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
     }
-    20% {
+    13.3333333333% {
+        opacity: 0;
+    }
+    26.6666666666% {
         opacity: 1;
+    }
+    66.6% {
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+    }
+    85% {
+        transform: translateX(0) scale(1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
     }
 }
 
@@ -173,9 +222,22 @@ header {
 @keyframes start-element3-animation {
     0% {
         opacity: 0;
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
     }
-    30% {
+    26.6666666666% {
+        opacity: 0;
+    }
+    39.9999999999% {
         opacity: 1;
+    }
+    66.6% {
+        transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+    }
+    85% {
+        transform: translateX(0) scale(1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
     }
 }
 
