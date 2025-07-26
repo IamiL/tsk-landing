@@ -593,6 +593,7 @@ header {
 
     /* Мобильная стартовая анимация */
     #header-start #logo {
+        --start-animation-duration: 7.5s;
         --mobile-scale: 1.5;
         --mobile-logoWidth: 66.21vw;
         --mobile-logoHeight: calc(var(--1h) * var(--mobile-scale));
@@ -753,41 +754,47 @@ header {
 
     /* Анимация фона header'а */
     #header-start {
-        background: transparent;
+        background: transparent !important;
         animation-name: start-header-background-animation;
-        animation-duration: var(--start-animation-duration);
+        animation-duration: 7.5s;
         animation-fill-mode: forwards;
     }
 
     @keyframes start-header-background-animation {
         0% {
-            background: transparent;
+            background: transparent !important;
         }
-        85% {
-            background: transparent;
+        75% {
+            background: transparent !important;
+        }
+        80% {
+            background: #1E1E1E !important;
         }
         100% {
-            background: #1E1E1E;
+            background: #1E1E1E !important;
         }
     }
 
     /* Анимация бургер-меню */
-    #header-start .menu-container {
-        transform: translateX(100%);
+    #header-start .menu-button {
+        transform: translateX(130%) !important;
         animation-name: start-burger-menu-animation;
-        animation-duration: var(--start-animation-duration);
+        animation-duration: 7.5s;
         animation-fill-mode: forwards;
     }
 
     @keyframes start-burger-menu-animation {
         0% {
-            transform: translateX(100%);
+            transform: translateX(150%) !important;
         }
-        87% {
-            transform: translateX(100%);
+        75% {
+            transform: translateX(150%) !important;
+        }
+        80% {
+            transform: translateX(0) !important;
         }
         100% {
-            transform: translateX(0);
+            transform: translateX(0) !important;
         }
     }
 }
