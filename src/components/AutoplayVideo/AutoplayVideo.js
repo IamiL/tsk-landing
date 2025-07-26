@@ -108,12 +108,10 @@ const AutoplayVideo = ({
             id={id}
             {...props}
         >
-            {isSafari &&
-                <source
-                    src={"/tsk.mov"}
-                    type="video/mp4"
-                />
-            }
+            <source
+                src={"/tsk.mov"}
+                type="video/mp4"
+            />
             {/* Основной источник видео */}
             {!isSafari && src && <source src={src} type="video/webm"/>}
 

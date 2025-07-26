@@ -590,4 +590,204 @@ header {
     #logo-img {
         height: 100%;
     }
+
+    /* Мобильная стартовая анимация */
+    #header-start #logo {
+        --mobile-scale: 1.5;
+        --mobile-logoWidth: 66.21vw;
+        --mobile-logoHeight: calc(var(--1h) * var(--mobile-scale));
+        --mobile-mainOffsetX: calc(50vw - calc(var(--mobile-logoWidth) / 2) + 5px);
+        --mobile-mainOffsetY: calc(50vh - calc(var(--svh) * 9 / 2) - calc(var(--mobile-logoHeight) / 2));
+    }
+
+    #header-start > #header > #logo > #logo-img {
+        animation-name: start-logo-mobile-animation;
+        animation-duration: var(--start-animation-duration);
+        overflow: visible;
+    }
+
+    @keyframes start-logo-mobile-animation {
+        0% {
+            transform: translate3d(var(--mobile-mainOffsetX), var(--mobile-mainOffsetY), 0) scale(var(--mobile-scale));
+        }
+        66.6% {
+            transform: translate3d(var(--mobile-mainOffsetX), var(--mobile-mainOffsetY), 0) scale(var(--mobile-scale));
+        }
+        85% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        100% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+    }
+
+    #header-start > #header > #logo > #logo-img > #path1 {
+        animation-name: start-element1-mobile-animation;
+        animation-duration: var(--start-animation-duration);
+    }
+
+    @keyframes start-element1-mobile-animation {
+        0% {
+            opacity: 0;
+            transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+        }
+        13.3333333333% {
+            opacity: 1;
+        }
+        66.6% {
+            transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+        }
+        85% {
+            transform: translateX(0) scale(1);
+        }
+        100% {
+            transform: translateX(0) scale(1);
+        }
+    }
+
+    #header-start > #header > #logo > #logo-img > #path2 {
+        animation-name: start-element2-mobile-animation;
+        animation-duration: var(--start-animation-duration);
+    }
+
+    @keyframes start-element2-mobile-animation {
+        0% {
+            opacity: 0;
+            transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+        }
+        13.3333333333% {
+            opacity: 0;
+        }
+        26.6666666666% {
+            opacity: 1;
+        }
+        66.6% {
+            transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+        }
+        85% {
+            transform: translateX(0) scale(1);
+        }
+        100% {
+            transform: translateX(0) scale(1);
+        }
+    }
+
+    #header-start > #header > #logo > #logo-img > #path3 {
+        animation-name: start-element3-mobile-animation;
+        animation-duration: var(--start-animation-duration);
+    }
+
+    @keyframes start-element3-mobile-animation {
+        0% {
+            opacity: 0;
+            transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+        }
+        26.6666666666% {
+            opacity: 0;
+        }
+        39.9999999999% {
+            opacity: 1;
+        }
+        66.6% {
+            transform: translateX(var(--logoIconX)) scale(var(--logoIconScale));
+        }
+        85% {
+            transform: translateX(0) scale(1);
+        }
+        100% {
+            transform: translateX(0) scale(1);
+        }
+    }
+
+    #header-start > #header > #logo > #logo-img > #path4 {
+        animation-name: start-text2-mobile-animation;
+        animation-duration: var(--start-animation-duration);
+    }
+
+    @keyframes start-text2-mobile-animation {
+        0% {
+            opacity: 0;
+            transform: translate3d(var(--logoText2X), var(--logoText2Y), 0);
+        }
+        39.9999999999% {
+            opacity: 0;
+        }
+        53.3% {
+            opacity: 1;
+        }
+        66.6% {
+            transform: translate3d(var(--logoText2X), var(--logoText2Y), 0);
+        }
+        85% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    #header-start > #header > #logo > #logo-img > #path5 {
+        animation-name: start-text1-mobile-animation;
+        animation-duration: var(--start-animation-duration);
+    }
+
+    @keyframes start-text1-mobile-animation {
+        0% {
+            opacity: 0;
+            transform: translate3d(var(--logoText1X), var(--logoText1Y), 0);
+        }
+        53.3% {
+            opacity: 0;
+        }
+        66.6% {
+            opacity: 1;
+            transform: translate3d(var(--logoText1X), var(--logoText1Y), 0);
+        }
+        85% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    /* Анимация фона header'а */
+    #header-start {
+        background: transparent;
+        animation-name: start-header-background-animation;
+        animation-duration: var(--start-animation-duration);
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes start-header-background-animation {
+        0% {
+            background: transparent;
+        }
+        85% {
+            background: transparent;
+        }
+        100% {
+            background: #1E1E1E;
+        }
+    }
+
+    /* Анимация бургер-меню */
+    #header-start .menu-container {
+        transform: translateX(100%);
+        animation-name: start-burger-menu-animation;
+        animation-duration: var(--start-animation-duration);
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes start-burger-menu-animation {
+        0% {
+            transform: translateX(100%);
+        }
+        87% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
 }
