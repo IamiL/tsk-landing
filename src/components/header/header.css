@@ -11,7 +11,7 @@ header {
     margin-bottom: calc(var(--1w) * 0.7);
 }
 
-#header-start + main > #mainp-sec1, #header-start + main > #mainp-sec2 {
+#header-start + main > #mainp-sec1, #header-start + main > #mainp-sec2, #header-start + main > #mainp-sec3 {
     animation-name: start-mainp-sec1-animation;
     animation-duration: 7.5s;
     transition-timing-function: ease;
