@@ -21,7 +21,7 @@ export default function StartAnim({anim, setAnim, pathname}) {
             const timer = setTimeout(() => {
                 setAnim(false);
                 document.body.style.overflow = "visible";
-            }, 10000);
+            }, 7500);
 
             return () => {
                 clearTimeout(timer);
