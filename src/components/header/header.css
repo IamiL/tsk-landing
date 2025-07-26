@@ -792,8 +792,8 @@ header {
 
     /* Анимация бургер-меню */
     #header-start .menu-button {
-        transform: translateX(130%) !important;
-        animation-name: start-burger-menu-animation;
+        /*transform: translateX(130%) !important;*/
+        /*animation-name: start-burger-menu-animation;*/
         animation-duration: 7.5s;
         animation-fill-mode: forwards;
     }
