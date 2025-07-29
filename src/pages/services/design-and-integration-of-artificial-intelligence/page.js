@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../services.module.css';
+import {Link} from "react-router-dom";
 
 function DesignAndIntegrationOfArtificialIntelligencePage() {
     return (
         <section className={styles.serviceSection}>
-            {/*<Link to="/services" className={styles.navBtn}>*/}
-            {/*    ←услуги*/}
-            {/*</Link>*/}
+            {typeof document !== 'undefined' && <Link to={"/services"} className={styles.navBtn}>
+                ←услуги
+            </Link>}
             <h1 className='fs3 mfs3 m-b'>Проектирование и интеграция систем искусственного интеллекта на основе
                 нейронных технологий</h1>
             <div className={styles.serviceContainer}>

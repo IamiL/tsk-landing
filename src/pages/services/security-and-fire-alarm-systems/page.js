@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../services.module.css';
+import {Link} from "react-router-dom";
 
 function Page() {
     return (
         <section className={styles.serviceSection}>
-            {/*<Link to={"/services"} className={styles.navBtn}>*/}
-            {/*    ←услуги*/}
-            {/*</Link>*/}
+            {typeof document !== 'undefined' && <Link to={"/services"} className={styles.navBtn}>
+                ←услуги
+            </Link>}
             <h1 className='fs3 mfs3 m-b'>Охранно-пожарная сигнализация и системы оповещения</h1>
             <div className={styles.serviceContainer}>
                 <div className={styles.divider}/>
