@@ -115,6 +115,10 @@ main {
 
 }
 
+.redLine {
+    text-indent: calc(var(--1w) * 0.3);
+}
+
 .fs1 {
     font-size: 2.3125rem
 }

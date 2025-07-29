@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../services.module.css';
+import {Link} from "react-router-dom";
 
 function AccessControlPage() {
     return (
         <section className={styles.serviceSection}>
-            {/*<Link to={"/services"} className={styles.navBtn}>*/}
-            {/*    ←услуги*/}
-            {/*</Link>*/}
+            <Link to={"/services"} className={styles.navBtn}>
+                ←услуги
+            </Link>
             <h1 className='fs3 mfs3 m-b'>Контроль и управление доступом</h1>
             <div className={styles.serviceContainer}>
                 <div className={styles.divider}/>
