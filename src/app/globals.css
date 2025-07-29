@@ -119,6 +119,10 @@ main {
     text-indent: calc(var(--1w) * 0.3);
 }
 
+.widthAlignment {
+    text-align: justify;
+}
+
 .fs1 {
     font-size: 2.3125rem
 }

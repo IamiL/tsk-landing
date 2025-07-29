@@ -53,4 +53,5 @@
 
 .redLine {
     text-indent: calc(var(--1w) * 0.3);
+    text-align: justify;
 }

@@ -10,11 +10,12 @@ export default function ServicesPage() {
             <div id='servicesp-container1'>
                 <div className='divid' id='divid3'/>
                 <p id='servicesp-container1-text'
-                   className='fs5 mfs6 i-r redLine'>Мы предлагаем комплексный подход к решению задач, поставленных
+                   className='fs5 mfs6 i-r redLine widthAlignment'>Мы предлагаем комплексный подход к решению задач,
+                    поставленных
                     заказчиком,
                     обеспечивая создание надежной и эффективной системы безопасности. В её состав входят подсистемы
                     видеонаблюдения, контроля доступа и охранной сигнализации.</p>
-                <p className='fs5 mfs6 i-r redLine'>
+                <p className='fs5 mfs6 i-r redLine widthAlignment'>
                     Системы предусматривают возможность взаимной интеграции, а также дальнейшее расширение
                     функциональности — без необходимости замены уже установленного оборудования.</p>
             </div>
