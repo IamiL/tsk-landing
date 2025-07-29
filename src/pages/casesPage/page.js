@@ -15,7 +15,7 @@ export default function CasesPage() {
 `}</p>
             </div>
             <button
-                onClick={() => window.open("/reviews.rar", "")} className='btn fs5 mfs6 i-m up'
+                onClick={() => window.open("/portfolio-tSk.pdf", "")} className='btn fs5 mfs6 i-m up'
                 id='casesp-btn'>↓ скачать портфолио
             </button>
             <div id='casesp-container2'>

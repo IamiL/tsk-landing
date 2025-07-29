@@ -26,7 +26,7 @@ export default function HomePage() {
                     className='br1'/>
                     <span id="h1-2padding">партнёрство</span><br className='br1'/><span
                         id="h1-3padding">лучших</span></h1>
-                <AutoplayVideo 
+                <AutoplayVideo
                     src="/logo.webm"
                     id="mainp-sec1-img"
                     width="100%"
@@ -368,7 +368,7 @@ export default function HomePage() {
                     </Carousel>
                 </div>
                 <button className='btn fs5 mfs6 i-m up' id='mainp-btn2'
-                        onClick={() => window.open("/reviews.rar", "")}>↓
+                        onClick={() => window.open("/portfolio-tSk.pdf", "")}>↓
                     скачать портфолио
                 </button>
             </section>
