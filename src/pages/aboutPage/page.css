@@ -124,6 +124,7 @@
 
 .aboutp-element-li1::before {
     content: '•';
+    margin-right: calc(var(--1w) * 0.1);
 }
 
 @media only screen and (max-width: 767px) {

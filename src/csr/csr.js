@@ -30,6 +30,7 @@ import WarrantyAndPostWarrantyServicePage from "@/pages/services/warranty-and-po
 import UralFortumCasePage from "@/pages/cases/ural-fortum/page";
 import WesternSiberiaFortumCasePage from "@/pages/cases/western-siberia-fortum/page";
 import ChelyabinskMetallurgicalCombineCasePage from "@/pages/cases/chelyabinsk-metallurgical-combine/page";
+import PrivacyPage from "@/pages/privacyPage/page";
 
 // const router = createBrowserRouter([
 //     {
@@ -127,6 +128,7 @@ export default function Csr() {
                         <Route exact path="/cases/ural-fortum" element={<UralFortumCasePage/>}/>
                         <Route exact path="/cases/western-siberia-fortum" element={<WesternSiberiaFortumCasePage/>}/>
                         <Route exact path="/cases/chelyabinsk-metallurgical-combine" element={<ChelyabinskMetallurgicalCombineCasePage/>}/>
+                        <Route exact path="/privacy" element={<PrivacyPage/>}/>
                     </Routes>
                 </main>
                 <Footer/>

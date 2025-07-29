@@ -1,4 +1,5 @@
 import "./footer.css"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
     return <footer>
@@ -17,7 +18,7 @@ export default function Footer() {
                     <h4 className='footer-h4'>E-mail:</h4><p>info@tsk74.ru</p>
                 </div>
             </address>
-            <a className='fs8 mfs7 i-m'>Политика конфиденциальности </a>
+            <Link to="/privacy" className='fs8 mfs7 i-m'>Политика конфиденциальности </Link>
         </div>
     </footer>
 }

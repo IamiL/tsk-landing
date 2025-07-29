@@ -4,12 +4,15 @@ import styles from '../services.module.css';
 function Page() {
     return (
         <section className={styles.serviceSection}>
+            {/*<Link to={"/services"} className={styles.navBtn}>*/}
+            {/*    ←услуги*/}
+            {/*</Link>*/}
             <h1 className='fs3 mfs3 m-b'>Системы видеонаблюдения</h1>
             <div className={styles.serviceContainer}>
                 <div className={styles.divider}/>
             </div>
             <div>
-                <img src="/images/services/surveillance-system/surveillance-system.png" alt="Системы видеонаблюдения"
+                <img src="/images/services/surveillance-system/surveillance-system.jpg" alt="Системы видеонаблюдения"
                      className={styles.serviceImage}/>
                 <div className='fs5 mfs6 i-r'>
                     <p>Мы предлагаем профессиональные решения по видеонаблюдению, способные обеспечить максимальную

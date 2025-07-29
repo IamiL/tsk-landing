@@ -56,7 +56,7 @@ export default function ContactsPage() {
                             Почтовый адрес
                         </p>
                         <p className='right-text-align'>
-                            454008, г. Челябинск, ул. Кыштымская, 3-44
+                            454048, г. Челябинск, ул. Доватора, 32в
                         </p>
                     </li>
                     <li className='contactsp-spec border-bottom'>
