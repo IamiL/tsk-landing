@@ -5,13 +5,14 @@ import {Link} from "react-router-dom";
 function DesignAndIntegrationOfArtificialIntelligencePage() {
     return (
         <section className={styles.serviceSection}>
-            {typeof document !== 'undefined' && <Link to={"/services"} className={styles.navBtn}>
-                ←услуги
-            </Link>}
             <h1 className='fs3 mfs3 m-b'>Проектирование и интеграция систем искусственного интеллекта на основе
                 нейронных технологий</h1>
             <div className={styles.serviceContainer}>
-                <div className={styles.divider}/>
+                <div className={styles.divider}>
+                    {typeof document !== 'undefined' && <Link to={"/services"} className={`${styles.navBtn} fs5 i-r`}>
+                        ←услуги
+                    </Link>}
+                </div>
             </div>
             <div>
                 {/*<img src="/images/services/default-service-image.png" alt="Системы искусственного интеллекта"*/}

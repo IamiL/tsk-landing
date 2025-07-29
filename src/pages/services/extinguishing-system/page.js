@@ -5,12 +5,13 @@ import {Link} from "react-router-dom";
 function ExtinguishingSystemPage() {
     return (
         <section className={styles.serviceSection}>
-            {typeof document !== 'undefined' && <Link to={"/services"} className={styles.navBtn}>
-                ←услуги
-            </Link>}
             <h1 className='fs3 mfs3 m-b'>Системы пожаротушения</h1>
             <div className={styles.serviceContainer}>
-                <div className={styles.divider}/>
+                <div className={styles.divider}>
+                    {typeof document !== 'undefined' && <Link to={"/services"} className={`${styles.navBtn} fs5 i-r`}>
+                        ←услуги
+                    </Link>}
+                </div>
             </div>
             <div>
                 <div style={{display: 'flex'}}>

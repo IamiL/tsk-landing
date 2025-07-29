@@ -5,12 +5,13 @@ import {Link} from "react-router-dom";
 function AccessControlPage() {
     return (
         <section className={styles.serviceSection}>
-            {typeof document !== 'undefined' && <Link to={"/services"} className={styles.navBtn}>
-                ←услуги
-            </Link>}
             <h1 className='fs3 mfs3 m-b'>Контроль и управление доступом</h1>
             <div className={styles.serviceContainer}>
-                <div className={styles.divider}/>
+                <div className={styles.divider}>
+                    {typeof document !== 'undefined' && <Link to={"/services"} className={`${styles.navBtn} fs5 i-r`}>
+                        ←услуги
+                    </Link>}
+                </div>
             </div>
             <div>
                 <img src="/images/services/access-control/access-control.png" alt="Контроль и управление доступом"

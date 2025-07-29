@@ -6,6 +6,10 @@
     width: var(--100w);
 }
 
+.serviceSection .fs5 {
+    font-size: 0.7rem !important;
+}
+
 .serviceTitle {
     /* Will use same classes as other pages: fs3 mfs3 m-b */
 }
@@ -43,7 +47,6 @@
 }
 
 .navBtn {
-    font-size: calc(var(--1w) * 0.3);
     border-bottom: 3px solid rgba(247, 247, 247, 0.75);
 }
 

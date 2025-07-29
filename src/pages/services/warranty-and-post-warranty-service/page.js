@@ -5,12 +5,13 @@ import {Link} from "react-router-dom";
 function Page() {
     return (
         <section className={styles.serviceSection}>
-            {typeof document !== 'undefined' && <Link to={"/services"} className={styles.navBtn}>
-                ←услуги
-            </Link>}
             <h1 className='fs3 mfs3 m-b'>Гарантийное и постгарантийное обслуживание</h1>
             <div className={styles.serviceContainer}>
-                <div className={styles.divider}/>
+                <div className={styles.divider}>
+                    {typeof document !== 'undefined' && <Link to={"/services"} className={`${styles.navBtn} fs5 i-r`}>
+                        ←услуги
+                    </Link>}
+                </div>
             </div>
             <div>
                 {/*<img src="/images/services/default-service-image.png" alt="Гарантийное и постгарантийное обслуживание"*/}
