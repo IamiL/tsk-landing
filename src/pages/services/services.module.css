@@ -46,3 +46,7 @@
     font-size: calc(var(--1w) * 0.3);
     border-bottom: 3px solid rgba(247, 247, 247, 0.75);
 }
+
+.redLine {
+    text-indent: calc(var(--1w) * 0.3);
+}
