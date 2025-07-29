@@ -10,11 +10,11 @@
 }
 
 .privacy-notice {
-    background-color: #f8f9fa;
+    /*background-color: #f8f9fa;*/
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 40px;
-    border-left: 4px solid #007bff;
+    /*border-left: 4px solid #007bff;*/
 }
 
 .privacy-content {
@@ -23,7 +23,7 @@
 
 .privacy-content h2 {
     margin-bottom: 30px;
-    color: #333;
+    /*color: w;*/
 }
 
 .privacy-section-item {
@@ -32,7 +32,7 @@
 
 .privacy-section-item h3 {
     margin-bottom: 20px;
-    color: #444;
+    /*color: #444;*/
 }
 
 .privacy-list {
@@ -46,7 +46,7 @@
 }
 
 .contact-info {
-    background-color: #f8f9fa;
+    /*background-color: #f8f9fa;*/
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -60,16 +60,16 @@
     .privacy-section {
         padding: 20px 10px;
     }
-    
+
     #privacy-heading {
         font-size: 1.8rem;
     }
-    
+
     .privacy-notice,
     .contact-info {
         padding: 15px;
     }
-    
+
     .privacy-list {
         padding-left: 15px;
     }

@@ -51,7 +51,7 @@ header {
     grid-column-start: 1;
     grid-column-end: 4;
     --start-animation-duration: 7.5s;
-    --mainOffset1X: calc(calc(var(--1w) * 6) - calc(var(--1w) * 1.5));
+    --mainOffset1X: calc(calc(var(--1w) * 6.3) - calc(var(--1w) * 1.5));
     --mainOffset1Y: calc(100vh / 2 - calc(var(--1w) * .593284 * 5 / 2) - calc(var(--1w) * .179104));
     --mainScale: 3;
     --logoIconX: 28%;
