@@ -15,6 +15,7 @@
 }
 
 .serviceContainer {
+    margin-bottom: calc(var(--1w) * 0.3);
     /* Container for divider and subtitle */
 }
 
