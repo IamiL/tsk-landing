@@ -11,7 +11,7 @@ export default function MobileMap() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 100,
+        speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
