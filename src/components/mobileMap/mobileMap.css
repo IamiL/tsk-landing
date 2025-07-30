@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+#mobile-map-carts .slick-dots > li, #mobile-map-carts .slick-dots > li > button, #mobile-map-carts .slick-dots > li > button::before {
+    width: 3px;
+    height: 14px;
+}
+
 #mobile-map-carts .slick-dots {
     font-size: 20px;
     bottom: 10px;

@@ -48,6 +48,7 @@
 
 @media only screen and (max-width: 767px) {
     .cart6 {
+        width: 100%;
         height: calc(var(--svh) * 47.652575);
         display: inline-grid;
         grid-template-columns: 100%;
