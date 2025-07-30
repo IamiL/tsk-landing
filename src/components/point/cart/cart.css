@@ -34,13 +34,82 @@
     border-radius: calc(var(--1w) * 0.05);
     border: 1px solid rgba(247, 247, 247, 0.75);
     background: #191919;
-    width: calc(var(--1w) * 3);
+    /*width: calc(var(--1w) * 3);*/
     z-index: 1;
     /*transition: opacity 0.2s ease-in-out;*/
     overflow: hidden;
 }
 
-.point-info-open-left {
+.point:not(:hover) > .point-info-left {
+    opacity: 0;
+    animation-name: point-info-close-left;
+    animation-duration: 0.15s;
+    height: 0;
+    width: 0;
+    margin-left: calc(var(--1w) * 0.13);
+    margin-bottom: calc(var(--1w) * 0.3);
+}
+
+@keyframes point-info-close-left {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        height: unset;
+        /*width: calc(var(--1w) * 3);*/
+        width: unset;
+    }
+
+    99% {
+        /*width: calc(var(--1w) * 3);*/
+        width: unset;
+        opacity: 0;
+        height: unset;
+        transform: translateY(calc(var(--1w) * 0.15));
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(calc(var(--1w) * 0.15));
+        height: 0;
+        width: 0;
+    }
+}
+
+.point:not(:hover) > .point-info-right {
+    opacity: 0;
+    animation-name: point-info-close-right;
+    animation-duration: 0.3s;
+    height: 0;
+    width: 0;
+    margin-right: calc(var(--1w) * 0.12);
+    margin-bottom: calc(var(--1w) * 0.3);
+}
+
+@keyframes point-info-close-right {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        height: unset;
+        /*width: calc(var(--1w) * 3);*/
+        width: unset;
+    }
+
+    99% {
+        /*width: calc(var(--1w) * 3);*/
+        width: unset;
+        transform: translateY(calc(var(--1w) * 0.15));
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(calc(var(--1w) * 0.15));
+        height: 0;
+        width: 0;
+    }
+}
+
+.point:hover > .point-info-left {
     opacity: 1;
     animation-name: point-info-open-left;
     animation-duration: 0.15s;
@@ -60,7 +129,8 @@
         opacity: 0;
         transform: translateY(calc(var(--1w) * 0.15));
         height: 0;
-        width: calc(var(--1w) * 3);
+        /*width: calc(var(--1w) * 3);*/
+        width: unset;
     }
 
     100% {
@@ -70,41 +140,7 @@
     }
 }
 
-.point-info-close-left {
-    opacity: 0;
-    animation-name: point-info-close-left;
-    animation-duration: 0.15s;
-    height: 0;
-    width: 0;
-    margin-left: calc(var(--1w) * 0.13);
-    margin-bottom: calc(var(--1w) * 0.3);
-}
-
-@keyframes point-info-close-left {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-        height: unset;
-        width: calc(var(--1w) * 3);
-    }
-
-    99% {
-        width: calc(var(--1w) * 3);
-        opacity: 0;
-        height: unset;
-        transform: translateY(calc(var(--1w) * 0.15));
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(calc(var(--1w) * 0.15));
-        height: 0;
-        width: 0;
-    }
-}
-
-
-.point-info-open-right {
+.point:hover > .point-info-right {
     opacity: 1;
     animation-name: point-info-open-right;
     animation-duration: 0.3s;
@@ -126,37 +162,123 @@
     }
 }
 
-.point-info-close-right {
-    opacity: 0;
-    animation-name: point-info-close-right;
-    animation-duration: 0.3s;
-    height: 0;
-    width: 0;
-    margin-right: calc(var(--1w) * 0.12);
-    margin-bottom: calc(var(--1w) * 0.3);
-}
+/*.point-info-open-left {*/
+/*    opacity: 1;*/
+/*    animation-name: point-info-open-left;*/
+/*    animation-duration: 0.15s;*/
+/*    margin-left: calc(var(--1w) * 0.13);*/
+/*    margin-bottom: calc(var(--1w) * 0.3);*/
+/*}*/
 
-@keyframes point-info-close-right {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-        height: unset;
-        width: calc(var(--1w) * 3);
-    }
+/*@keyframes point-info-open-left {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        transform: translateY(calc(var(--1w) * 0.15));*/
+/*        height: 0;*/
+/*        width: 0;*/
+/*    }*/
 
-    99% {
-        width: calc(var(--1w) * 3);
-        transform: translateY(calc(var(--1w) * 0.15));
-        opacity: 0;
-    }
+/*    1% {*/
+/*        opacity: 0;*/
+/*        transform: translateY(calc(var(--1w) * 0.15));*/
+/*        height: 0;*/
+/*        width: calc(var(--1w) * 3);*/
+/*    }*/
 
-    100% {
-        opacity: 0;
-        transform: translateY(calc(var(--1w) * 0.15));
-        height: 0;
-        width: 0;
-    }
-}
+/*    100% {*/
+/*        opacity: 1;*/
+/*        transform: translateY(0);*/
+/*        height: unset;*/
+/*    }*/
+/*}*/
+
+/*.point-info-close-left {*/
+/*    opacity: 0;*/
+/*    animation-name: point-info-close-left;*/
+/*    animation-duration: 0.15s;*/
+/*    height: 0;*/
+/*    width: 0;*/
+/*    margin-left: calc(var(--1w) * 0.13);*/
+/*    margin-bottom: calc(var(--1w) * 0.3);*/
+/*}*/
+
+/*@keyframes point-info-close-left {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*        transform: translateY(0);*/
+/*        height: unset;*/
+/*        width: calc(var(--1w) * 3);*/
+/*    }*/
+
+/*    99% {*/
+/*        width: calc(var(--1w) * 3);*/
+/*        opacity: 0;*/
+/*        height: unset;*/
+/*        transform: translateY(calc(var(--1w) * 0.15));*/
+/*    }*/
+
+/*    100% {*/
+/*        opacity: 0;*/
+/*        transform: translateY(calc(var(--1w) * 0.15));*/
+/*        height: 0;*/
+/*        width: 0;*/
+/*    }*/
+/*}*/
+
+
+/*.point-info-open-right {*/
+/*    opacity: 1;*/
+/*    animation-name: point-info-open-right;*/
+/*    animation-duration: 0.3s;*/
+/*    margin-right: calc(var(--1w) * 0.12);*/
+/*    margin-bottom: calc(var(--1w) * 0.3);*/
+/*}*/
+
+/*@keyframes point-info-open-right {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        transform: translateY(calc(var(--1w) * 0.15));*/
+/*        height: 0;*/
+/*    }*/
+
+/*    100% {*/
+/*        opacity: 1;*/
+/*        transform: translateY(0);*/
+/*        height: unset;*/
+/*    }*/
+/*}*/
+
+/*.point-info-close-right {*/
+/*    opacity: 0;*/
+/*    animation-name: point-info-close-right;*/
+/*    animation-duration: 0.3s;*/
+/*    height: 0;*/
+/*    width: 0;*/
+/*    margin-right: calc(var(--1w) * 0.12);*/
+/*    margin-bottom: calc(var(--1w) * 0.3);*/
+/*}*/
+
+/*@keyframes point-info-close-right {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*        transform: translateY(0);*/
+/*        height: unset;*/
+/*        width: calc(var(--1w) * 3);*/
+/*    }*/
+
+/*    99% {*/
+/*        width: calc(var(--1w) * 3);*/
+/*        transform: translateY(calc(var(--1w) * 0.15));*/
+/*        opacity: 0;*/
+/*    }*/
+
+/*    100% {*/
+/*        opacity: 0;*/
+/*        transform: translateY(calc(var(--1w) * 0.15));*/
+/*        height: 0;*/
+/*        width: 0;*/
+/*    }*/
+/*}*/
 
 .point-info-top {
     width: 100%;

@@ -97,6 +97,114 @@ export default function CasesPage() {
                        geo={'(Челябинская обл., г. Челябинск)'}>
                     <img src={'/images/cases/12.jpg'} alt={'project-ural'}/>
                 </Cart6>
+                <Cart6 heading={'ООО «Мечел – Энерго»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/1.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО «Мечел – Кокс»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/2.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО «Мечел – Материалы»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/3.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО СпецРемЗавод'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/4.jpeg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО УрМО'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/4.jpeg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'АО «ЧЭМК»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/5.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ОАО «КЕММА»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/6.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО «Кемма-ЦветМет»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/6.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ОАО «Челябинский механический завод»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/8.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ОАО Челябинский кузнечно-прессовый завод'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/7.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО «ТЗК Волга»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/9.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ОАО «Челябинский комбинат хлебопродуктов №1»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/10.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ПЖРЭО Курчатовского района'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/11.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО «КНАУФ ГИПС ЧЕЛЯБИНСК»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/12.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ЗАО «Втор-Ком»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/13.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ВДПО'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/14.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'ООО Агрохолдинг «Уралбройлер»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/15.jpg'} alt={'project-ural'}/>
+                </Cart6>
+                <Cart6 heading={'Национальная водная компания ООО ПК «НИАГАРА»'}
+                       value={''}
+                       v2={''}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
+                    <img src={'/images/cases/2-part/16.jpg'} alt={'project-ural'}/>
+                </Cart6>
             </div>
         </section>
     );
