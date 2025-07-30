@@ -12,6 +12,7 @@
 #point2 {
     top: calc(var(--1w) * 3.35);
     left: calc(var(--1w) * 0.9);
+    z-index: 9;
 }
 
 #point3 {
@@ -69,6 +70,7 @@
 #point13 {
     top: calc(var(--1w) * 3.7);
     left: calc(var(--1w) * 2.1);
+    z-index: 8;
 }
 
 #point14 {

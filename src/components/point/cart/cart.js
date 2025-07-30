@@ -14,10 +14,10 @@ export default function PointCart({
                                       imageLink,
                                       imageAlt
                                   }) {
-    return <div className='point' id={id}>
-        {!cartLeft && <Point className={`point-icon`} onClick={() => {
+    return <div className='point' id={id} style={cartLeft && {flexDirection: 'row-reverse'}}>
+        <Point className={`point-icon`} onClick={() => {
             isOpen ? close() : open()
-        }}/>}
+        }}/>
         <div
             className={`point-info ${cartLeft ? 'point-info-right' : 'point-info-left'}`}>
             <div className='point-info-top'>
@@ -48,8 +48,8 @@ export default function PointCart({
             {/*        Подробнее</Link>*/}
             {/*</div>*/}
         </div>
-        {cartLeft && <Point className={`point-icon ${isOpen ? 'point-icon-active' : ''}`} onClick={() => {
-            isOpen ? close() : open()
-        }}/>}
+        {/*{cartLeft && <Point className={`point-icon ${isOpen ? 'point-icon-active' : ''}`} onClick={() => {*/}
+        {/*    isOpen ? close() : open()*/}
+        {/*}}/>}*/}
     </div>
 }

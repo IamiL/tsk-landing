@@ -40,7 +40,7 @@
     overflow: hidden;
 }
 
-.point:not(:hover) > .point-info-left {
+.point-icon:not(:hover) + .point-info-left {
     opacity: 0;
     animation-name: point-info-close-left;
     animation-duration: 0.15s;
@@ -75,7 +75,7 @@
     }
 }
 
-.point:not(:hover) > .point-info-right {
+.point-icon:not(:hover) + .point-info-right {
     opacity: 0;
     animation-name: point-info-close-right;
     animation-duration: 0.3s;
@@ -109,7 +109,7 @@
     }
 }
 
-.point:hover > .point-info-left {
+.point-icon:hover + .point-info-left {
     opacity: 1;
     animation-name: point-info-open-left;
     animation-duration: 0.15s;
@@ -140,7 +140,7 @@
     }
 }
 
-.point:hover > .point-info-right {
+.point-icon:hover + .point-info-right {
     opacity: 1;
     animation-name: point-info-open-right;
     animation-duration: 0.3s;
