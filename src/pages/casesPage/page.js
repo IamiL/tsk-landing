@@ -24,64 +24,77 @@ export default function CasesPage() {
                 {/*       v2={'/contactusPage'}>*/}
                 {/*    <img src={'/not-found2.png'} alt={'project-ural'}/>*/}
                 {/*</Cart6>*/}
-                <Cart6 heading={'Управление федеральной налоговой службы по Челябинской области (г. Челябинск)'}
+                <Cart6 heading={'Управление федеральной налоговой службы по Челябинской области'}
                        value={'Строительно-монтажные и пусконаладочные работы Инженерно-Технических Средств безопасности объекта.'}
-                       v2={'/cases/ural-fortum'}>
+                       v2={'/cases/ural-fortum'}
+                       geo={'(г. Челябинск)'}>
                     <img src={'/images/cases/tax-service.jpeg'} alt={'project-tax-service'}/>
                 </Cart6>
                 <Cart6 heading={'Энергосистема «Урал» ОАО «Фортум»'}
                        value={'Работы по оснащению структурных подразделений филиала Энергосистема «Урал» ОАО «Фортум» комплексной системы безопасности. Челябинская ТЭЦ-1, Челябинская ТЭЦ-2, Челябинская ТЭЦ-3, Аргаяшская ТЭЦ.'}
-                       v2={'/cases/western-siberia-fortum'}>
+                       v2={'/cases/western-siberia-fortum'}
+                       geo={''}>
                     <img src={'/images/cases/2.jpg'} alt={'project-ural'}/>
                 </Cart6>
                 <Cart6 heading={'Энергосистема «Западная Сибирь» ОАО «Фортум»'}
                        value={'Работы по оснащению структурных подразделений филиала Энергосистема «Западная Сибирь» ОАО «Фортум» комплексной системой безопасности. Тюменская ТЭЦ-1, Тюменская ТЭЦ-2, Тобольская ТЭЦ.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={''}>
                     <img src={'/images/cases/3.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ОАО «Челябинский металлургический комбинат» МЕЧЕЛ (Челябинская обл., г. Челябинск)'}
+                <Cart6 heading={'ОАО «Челябинский металлургический комбинат» МЕЧЕЛ'}
                        value={'Комплекс работ по выполнению проектных, строительно-монтажных и пусконаладочных работ систем связи, систем охраны периметра, систем безопасности и физической укрепленности объектов.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
                     <img src={'/images/cases/4.jpeg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ОАО Каслинский завод архитектурно-художественного литья (Челябинская обл., г. Касли)'}
+                <Cart6 heading={'ОАО Каслинский завод архитектурно-художественного литья'}
                        value={'Осуществление проектных, строительно-монтажных и пусконаладочных работ Интегрированной системы видеонаблюдения и систем охраны периметра.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., г. Касли)'}>
                     <img src={'/images/cases/5.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ОАО «Челябинский цинковый завод» (Челябинская обл., г. Челябинск)'}
+                <Cart6 heading={'ОАО «Челябинский цинковый завод»'}
                        value={'Реконструкция систем безопасности промышленного предприятия, реализация программы модернизации систем Интеграции ОПС в 2011–2013 гг.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
                     <img src={'/images/cases/6.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ОАО «Кыштымское машиностроительное объединение» (Челябинская обл., г. Кыштым)'}
+                <Cart6 heading={'ОАО «Кыштымское машиностроительное объединение»'}
                        value={'Строительно-монтажные и пусконаладочные работы по организации волоконно-оптической линии связи для нужд интегрированной системы безопасности предприятия.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., г. Кыштым)'}
+                       geo={''}>
                     <img src={'/images/cases/7.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ЗАО «Коелгамрамор» (Челябинская обл., Еткульский р-н, с. Коелга)'}
+                <Cart6 heading={'ЗАО «Коелгамрамор»'}
                        value={'Строительно-монтажные и пусконаладочные работы структурированных кабельных систем предприятия.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., Еткульский р-н, с. Коелга)'}>
                     <img src={'/images/cases/8.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ООО «НОВАТЭК-Челябинск» (Челябинская обл., г. Магнитогорск)'}
+                <Cart6 heading={'ООО «НОВАТЭК-Челябинск»'}
                        value={'Строительно-монтажные и пусконаладочные работы Инженерно-Технических Средств безопасности объекта.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., г. Магнитогорск)'}>
                     <img src={'/images/cases/9.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'АО «Южуралзолото Группа Компаний» (АО "ЮГК") (Челябинская обл., г. Пласт)'}
+                <Cart6 heading={'АО «Южуралзолото Группа Компаний» (АО "ЮГК")'}
                        value={'Комплекс работ по выполнению проектных, строительно-монтажных и пусконаладочных работ систем связи, систем охраны периметра, систем безопасности, систем охранной, пожарной сигнализации и оповещение о пожаре.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., г. Пласт)'}>
                     <img src={'/images/cases/10.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ООО УГМК-ТЕЛЕКОМ (Свердловская область)'}
+                <Cart6 heading={'ООО УГМК-ТЕЛЕКОМ'}
                        value={'Построение интегрированных систем безопасности на промышленных предприятиях УГМК-Холдинга. Выполнение проектных, строительно-монтажных и пусконаладочных работ, техническое обслуживание и сопровождение.'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Свердловская область)'}>
                     <img src={'/images/cases/11.jpg'} alt={'project-ural'}/>
                 </Cart6>
-                <Cart6 heading={'ООО «Бизнес-Сити» (Челябинская обл., г. Челябинск)'}
+                <Cart6 heading={'ООО «Бизнес-Сити»'}
                        value={'Комплекс работ по выполнению проектных, строительно-монтажных и пусконаладочных работ структурированных кабельных систем и систем безопасности (СКУД, ОПС, СОУЭ, Видеонаблюдение).'}
-                       v2={'/cases/chelyabinsk-metallurgical-combine'}>
+                       v2={'/cases/chelyabinsk-metallurgical-combine'}
+                       geo={'(Челябинская обл., г. Челябинск)'}>
                     <img src={'/images/cases/12.jpg'} alt={'project-ural'}/>
                 </Cart6>
             </div>

@@ -1,8 +1,9 @@
 import './cart6.css'
 
-export default function Cart6({children, heading, value, v2}) {
+export default function Cart6({children, heading, value, v2, geo}) {
     return <div className='cart6 main-grid'>
-        <h3 className='fs5 mfs4 i-m cart6-heading'>{heading}</h3>
+        <h3 className='fs5 mfs4 i-m cart6-heading'>{heading}
+            <span className='cart6-geo fs7 mfs6 i-m'>{geo}</span></h3>
         <div className='cart6-value'>
             <p className='fs8 mfs6 i-m'>{value}</p>
 

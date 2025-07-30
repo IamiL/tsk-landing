@@ -3,6 +3,10 @@
     height: calc(var(--1w) * 2.37);
 }
 
+.cart6 .cart6-geo {
+    display: block;
+}
+
 .cart6-heading {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -47,7 +51,7 @@
         height: calc(var(--svh) * 47.652575);
         display: inline-grid;
         grid-template-columns: 100%;
-        grid-template-rows: calc(var(--svh) * 8.333332) calc(var(--svh) * 16.666664) calc(var(--svh) * 22.652579);
+        grid-template-rows: calc(var(--svh) * 11.333332) calc(var(--svh) * 16.666664) calc(var(--svh) * 19.652579);
     }
 
     .cart6-heading {
