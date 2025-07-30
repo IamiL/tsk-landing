@@ -83,7 +83,7 @@
         grid-row-end: 3;
         padding-top: calc(var(--svh) * 2.3474151737);
         border: none;
-        height: calc(var(--svh) * 16.666664);
+        height: calc(var(--svh) * 18);
     }
 
     .cart6-img > img {
