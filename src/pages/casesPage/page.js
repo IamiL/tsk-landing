@@ -89,7 +89,7 @@ export default function CasesPage() {
                        value={'Построение интегрированных систем безопасности на промышленных предприятиях УГМК-Холдинга. Выполнение проектных, строительно-монтажных и пусконаладочных работ, техническое обслуживание и сопровождение.'}
                        v2={'/cases/chelyabinsk-metallurgical-combine'}
                        geo={'(Свердловская область)'}>
-                    <img src={'/images/cases/11.jpg'} alt={'project-ural'}/>
+                    <img src={'/images/cases/11.png'} alt={'project-ural'}/>
                 </Cart6>
                 <Cart6 heading={'ООО «Бизнес-Сити»'}
                        value={'Комплекс работ по выполнению проектных, строительно-монтажных и пусконаладочных работ структурированных кабельных систем и систем безопасности (СКУД, ОПС, СОУЭ, Видеонаблюдение).'}
@@ -158,7 +158,7 @@ export default function CasesPage() {
                     <img src={'/images/cases/2-part/7.jpg'} alt={'project-ural'}/>
                 </Cart6>
                 <Cart6 heading={'ООО «ТЗК Волга»'}
-                       value={''}
+                       value={'Проектирование ИТСО.'}
                        v2={''}
                        geo={'(Челябинская обл., г. Челябинск)'}>
                     <img src={'/images/cases/2-part/9.jpg'} alt={'project-ural'}/>
