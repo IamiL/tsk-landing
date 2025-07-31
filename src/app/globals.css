@@ -2,13 +2,13 @@
     navigation: auto;
 }
 
-::view-transition-old(root) {
-    animation: 100ms ease-out both fadeOut;
-}
+/*::view-transition-old(root) {*/
+/*    animation: 100ms ease-out both fadeOut;*/
+/*}*/
 
-::view-transition-new(root) {
-    animation: 100ms ease-in both fadeIn;
-}
+/*::view-transition-new(root) {*/
+/*    animation: 100ms ease-in both fadeIn;*/
+/*}*/
 
 @keyframes fadeOut {
     to {
