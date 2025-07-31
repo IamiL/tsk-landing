@@ -41,6 +41,14 @@ export default function MobileMap() {
                             id={'mpoint7'}/>
                 <PointCart2 onClick={() => setActiveCardIndex(8)} classname={activeCardIndex === 7 ? 'zoom-effect' : ''}
                             id={'mpoint8'}/>
+                <PointCart2 onClick={() => setActiveCardIndex(8)} classname={activeCardIndex === 7 ? 'zoom-effect' : ''}
+                            id={'mpoint9'}/>
+                <PointCart2 onClick={() => setActiveCardIndex(8)} classname={activeCardIndex === 7 ? 'zoom-effect' : ''}
+                            id={'mpoint10'}/>
+                <PointCart2 onClick={() => setActiveCardIndex(8)} classname={activeCardIndex === 7 ? 'zoom-effect' : ''}
+                            id={'mpoint11'}/>
+                <PointCart2 onClick={() => setActiveCardIndex(8)} classname={activeCardIndex === 7 ? 'zoom-effect' : ''}
+                            id={'mpoint12'}/>
             </div>
 
             <div id='mobile-map-carts'>

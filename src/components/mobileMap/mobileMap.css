@@ -46,8 +46,8 @@
 }
 
 #mpoint1 {
-    top: 27.5%;
-    left: 5.6%;
+    top: 75%;
+    left: 87%;
 }
 
 #mpoint2 {
@@ -57,32 +57,52 @@
 
 #mpoint3 {
     top: 45%;
-    left: 14%;
+    left: 18%;
 }
 
 #mpoint4 {
-    top: 62.8%;
-    left: 15%;
+    top: 68%;
+    left: 13%;
 }
 
 #mpoint5 {
-    top: 62.8%;
-    left: 30.8%;
+    top: 66%;
+    left: 28%;
 }
 
 #mpoint6 {
     top: 75%;
-    left: 41.5%;
+    left: 43%;
 }
 
 #mpoint7 {
-    top: 18%;
-    left: 53%;
+    top: 20%;
+    left: 55%;
 }
 
 #mpoint8 {
-    top: 9.5%;
-    left: 86%;
+    top: 30%;
+    left: 91%;
+}
+
+#mpoint9 {
+    top: 83%;
+    left: 48%;
+}
+
+#mpoint10 {
+    top: 47%;
+    left: 38%;
+}
+
+#mpoint11 {
+    top: 62%;
+    left: 34%;
+}
+
+#mpoint12 {
+    top: 69%;
+    left: 22%;
 }
 
 .zoom-effect {
