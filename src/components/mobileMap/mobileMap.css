@@ -18,8 +18,8 @@
 }
 
 #mobile-map-carts .slick-dots > li, #mobile-map-carts .slick-dots > li > button, #mobile-map-carts .slick-dots > li > button::before {
-    width: 3px;
-    height: 14px;
+    width: 2px;
+    height: 10px;
 }
 
 #mobile-map-carts .slick-dots {

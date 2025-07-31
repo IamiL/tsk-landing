@@ -3,7 +3,45 @@
 }
 
 ::view-transition-old(root) {
-    animation: 1s ease-in-out both slideOut;
+    animation: 100ms ease-out both fadeOut;
+}
+
+::view-transition-new(root) {
+    animation: 100ms ease-in both fadeIn;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes slideOut {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+}
+
+/* Исключаем header из view transitions */
+header {
+    view-transition-name: header;
+}
+
+::view-transition-old(header),
+::view-transition-new(header) {
+    animation: none;
 }
 
 html {

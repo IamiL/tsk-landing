@@ -42,40 +42,47 @@ export default function MobileNavbar({setVisible}) {
         </div>
         <nav id='mobile-nav' className={`${isOpen ? 'mobile-nav-open' : 'mobile-nav-close'}`}>
             <div id='navbar-block'>
-                <NavLink to={"/aboutPage"}
+                <NavLink to={"/about"}
                          onClick={() => setIsOpen(false)}
                          className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}
-                         style={{whiteSpace: "nowrap"}}>
+                         style={{whiteSpace: "nowrap"}}
+                         viewTransition>
                     о компании
                 </NavLink>
-                <NavLink to={"/servicesPage"}
+                <NavLink to={"/services"}
                          onClick={() => setIsOpen(false)}
-                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
+                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}
+                         viewTransition>
                     услуги
                 </NavLink>
-                <NavLink to={"/casesPage"}
+                <NavLink to={"/cases"}
                          onClick={() => setIsOpen(false)}
-                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
+                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}
+                         viewTransition>
                     проекты
                 </NavLink>
-                <NavLink to={"/licensesPage"}
+                <NavLink to={"/licenses"}
                          onClick={() => setIsOpen(false)}
-                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
+                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}
+                         viewTransition>
                     лицензии
                 </NavLink>
-                <NavLink to={"/reviewsPage"}
+                <NavLink to={"/reviews"}
                          onClick={() => setIsOpen(false)}
-                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
+                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}
+                         viewTransition>
                     отзывы
                 </NavLink>
-                <NavLink to={"/contactsPage"}
+                <NavLink to={"/contacts"}
                          onClick={() => setIsOpen(false)}
-                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}>
+                         className={({isActive}) => (`fs8 mfs4 i-b ${isActive ? 'mobile-navbar-active-link' : ''}`)}
+                         viewTransition>
                     контакты
                 </NavLink>
             </div>
-            <Link to={"/contactusPage"} className="fs8 mfs4 i-b"
-                  onClick={() => setIsOpen(false)}>
+            <Link to={"/contactus"} className="fs8 mfs4 i-b"
+                  onClick={() => setIsOpen(false)}
+                  viewTransition>
                 связаться
             </Link>
         </nav>

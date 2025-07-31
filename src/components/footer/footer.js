@@ -18,7 +18,7 @@ export default function Footer() {
                     <h4 className='footer-h4'>E-mail:</h4><p>info@tsk74.ru</p>
                 </div>
             </address>
-            <Link to="/privacy" className='fs8 mfs7 i-m'>Политика конфиденциальности </Link>
+            <Link to="/privacy" className='fs8 mfs7 i-m' viewTransition>Политика конфиденциальности </Link>
         </div>
     </footer>
 }

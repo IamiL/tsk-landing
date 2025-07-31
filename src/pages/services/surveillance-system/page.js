@@ -8,7 +8,7 @@ function Page() {
             <h1 className='fs3 mfs3 m-b'>Системы видеонаблюдения</h1>
             <div className={styles.serviceContainer}>
                 <div className={styles.divider}>
-                    {typeof document !== 'undefined' && <Link to={"/services"} className={`${styles.navBtn} fs5 i-r`}>
+                    {typeof document !== 'undefined' && <Link to={"/services"} className={`${styles.navBtn} fs5 i-r`} viewTransition>
                         ←услуги
                     </Link>}
                 </div>

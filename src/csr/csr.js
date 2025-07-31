@@ -1,5 +1,5 @@
 'use client';
-import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, useLocation, Outlet} from "react-router-dom";
 import {useEffect, useRef} from "react";
 
 // import Header from "@/components/header/header";
@@ -32,40 +32,106 @@ import WesternSiberiaFortumCasePage from "@/pages/cases/western-siberia-fortum/p
 import ChelyabinskMetallurgicalCombineCasePage from "@/pages/cases/chelyabinsk-metallurgical-combine/page";
 import PrivacyPage from "@/pages/privacyPage/page";
 
-// const router = createBrowserRouter([
-//     {
-//         path: "/",
-//         element: <HomePage/>,
-//     },
-//     {
-//         path: "/aboutPage",
-//         element: <AboutPage/>,
-//     },
-//     {
-//         path: "/casesPage",
-//         element: <CasesPage/>,
-//     },
-//     {
-//         path: "/contactsPage",
-//         element: <ContactsPage/>,
-//     },
-//     {
-//         path: "/contactusPage",
-//         element: <ContactusPage/>,
-//     },
-//     {
-//         path: "/licensesPage",
-//         element: <LicensesPage/>,
-//     },
-//     {
-//         path: "/reviewsPage",
-//         element: <ReviewsPage/>,
-//     },
-//     {
-//         path: "/servicesPage",
-//         element: <ServicesPage/>,
-//     },
-// ]);
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Layout/>,
+        children: [
+            {
+                index: true,
+                element: <HomePage/>,
+            },
+            {
+                path: "about",
+                element: <AboutPage/>,
+            },
+            {
+                path: "cases",
+                element: <CasesPage/>,
+            },
+            {
+                path: "contacts",
+                element: <ContactsPage/>,
+            },
+            {
+                path: "contactus",
+                element: <ContactusPage/>,
+            },
+            {
+                path: "licenses",
+                element: <LicensesPage/>,
+            },
+            {
+                path: "reviews",
+                element: <ReviewsPage/>,
+            },
+            {
+                path: "services",
+                element: <ServicesPage/>,
+            },
+            {
+                path: "services/kitsoz",
+                element: <KitsozPage/>,
+            },
+            {
+                path: "services/surveillance-system",
+                element: <SurveillanceSystemPage/>,
+            },
+            {
+                path: "services/security-and-fire-alarm-systems",
+                element: <SecurityAndFireAlarmSystemsPage/>,
+            },
+            {
+                path: "services/extinguishing-system",
+                element: <ExtinguishingSystemPage/>,
+            },
+            {
+                path: "services/access-control",
+                element: <AccessControlPage/>,
+            },
+            {
+                path: "services/design-and-integration-of-artificial-intelligence",
+                element: <DesignAndIntegrationOfArtificialIntelligencePage/>,
+            },
+            {
+                path: "services/structured-cabling-networks",
+                element: <StructuredCablingNetworksPage/>,
+            },
+            {
+                path: "services/perimeter-security-systems-equipment",
+                element: <PerimeterSecuritySystemsEquipmentPage/>,
+            },
+            {
+                path: "services/full-cycle-of-project-implementation",
+                element: <FullCycleOfProjectImplementationPage/>,
+            },
+            {
+                path: "services/customers-staff-training",
+                element: <CustomersStaffTrainingPage/>,
+            },
+            {
+                path: "services/warranty-and-post-warranty-service",
+                element: <WarrantyAndPostWarrantyServicePage/>,
+            },
+            {
+                path: "cases/ural-fortum",
+                element: <UralFortumCasePage/>,
+            },
+            {
+                path: "cases/western-siberia-fortum",
+                element: <WesternSiberiaFortumCasePage/>,
+            },
+            {
+                path: "cases/chelyabinsk-metallurgical-combine",
+                element: <ChelyabinskMetallurgicalCombineCasePage/>,
+            },
+            {
+                path: "privacy",
+                element: <PrivacyPage/>,
+            },
+        ]
+    },
+]);
 
 
 function ScrollToTop() {
@@ -91,49 +157,24 @@ function ScrollToTop() {
     return null;
 }
 
+function Layout() {
+    return (
+        <>
+            <ScrollToTop />
+            <Header/>
+            <main>
+                <Outlet />
+            </main>
+            <Footer/>
+        </>
+    );
+}
+
 export default function Csr() {
     return (
         typeof document !== 'undefined' &&
         <AppContextProvider>
-            <BrowserRouter>
-                <ScrollToTop />
-                <Header/>
-                <main>
-                    <Routes>
-                        <Route exact path="/" element={<HomePage/>}/>
-                        <Route exact path="/about" element={<AboutPage/>}/>
-                        <Route exact path="/cases" element={<CasesPage/>}/>
-                        <Route exact path="/contacts" element={<ContactsPage/>}/>
-                        <Route exact path="/contactus" element={<ContactusPage/>}/>
-                        <Route exact path="/licenses" element={<LicensesPage/>}/>
-                        <Route exact path="/reviews" element={<ReviewsPage/>}/>
-                        <Route exact path="/services" element={<ServicesPage/>}/>
-                        <Route exact path="/services/kitsoz" element={<KitsozPage/>}/>
-                        <Route exact path="/services/surveillance-system" element={<SurveillanceSystemPage/>}/>
-                        <Route exact path="/services/security-and-fire-alarm-systems"
-                               element={<SecurityAndFireAlarmSystemsPage/>}/>
-                        <Route exact path="/services/extinguishing-system" element={<ExtinguishingSystemPage/>}/>
-                        <Route exact path="/services/access-control" element={<AccessControlPage/>}/>
-                        <Route exact path="/services/design-and-integration-of-artificial-intelligence"
-                               element={<DesignAndIntegrationOfArtificialIntelligencePage/>}/>
-                        <Route exact path="/services/structured-cabling-networks"
-                               element={<StructuredCablingNetworksPage/>}/>
-                        <Route exact path="/services/perimeter-security-systems-equipment"
-                               element={<PerimeterSecuritySystemsEquipmentPage/>}/>
-                        <Route exact path="/services/full-cycle-of-project-implementation"
-                               element={<FullCycleOfProjectImplementationPage/>}/>
-                        <Route exact path="/services/customers-staff-training" element={<CustomersStaffTrainingPage/>}/>
-                        <Route exact path="/services/warranty-and-post-warranty-service"
-                               element={<WarrantyAndPostWarrantyServicePage/>}/>
-                        <Route exact path="/cases/ural-fortum" element={<UralFortumCasePage/>}/>
-                        <Route exact path="/cases/western-siberia-fortum" element={<WesternSiberiaFortumCasePage/>}/>
-                        <Route exact path="/cases/chelyabinsk-metallurgical-combine" element={<ChelyabinskMetallurgicalCombineCasePage/>}/>
-                        <Route exact path="/privacy" element={<PrivacyPage/>}/>
-                    </Routes>
-                </main>
-                <Footer/>
-            </BrowserRouter>
-            {/*<RouterProvider router={router} />*/}
+            <RouterProvider router={router} />
         </AppContextProvider>
     );
 }

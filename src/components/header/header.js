@@ -28,7 +28,7 @@ export default function Header() {
         <StartAnim anim={animIsPlayed} setAnim={setAnimIsPlayed} pathname={locationRouter.pathname}/>
         <div id="header" className='main-grid'>
             {/*<div id="start-background"/>*/}
-            <Link to={"/"} id="logo">
+            <Link to={"/"} id="logo" viewTransition>
                 <svg id='logo-img' viewBox="0 0 408 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" id='path3'
                           d="M10.2059 53.5614C7.04809 48.0919 5.5012 42.1345 5.41802 36.2384L13.6566 27.9998C13.7279 33.9198 15.2745 39.904 18.4454 45.3961C18.8401 46.0798 19.254 46.7454 19.686 47.3928L25.898 41.1808C26.679 40.3998 27.9453 40.3998 28.7264 41.1808L35.4999 47.9544C36.281 48.7354 36.281 50.0017 35.4999 50.7828L29.2375 57.0452C34.937 60.9295 41.6486 63.0755 48.5032 63.2501L40.3361 71.4172C28.2881 71.1347 16.6722 64.7614 10.2059 53.5614Z"
