@@ -56,7 +56,7 @@ export default function ContactsPage() {
                             Почтовый адрес
                         </p>
                         <p className='right-text-align'>
-                            454048, г. Челябинск, ул. Доватора, 32в
+                            454048, г. Челябинск, ул. Доватора, 32 В-6
                         </p>
                     </li>
                     <li className='contactsp-spec border-bottom'>
@@ -91,14 +91,14 @@ export default function ContactsPage() {
                             Солопов Дмитрий Викторович
                         </p>
                     </li>
-                    <li className='contactsp-spec border-bottom'>
-                        <p>
-                            Главный бухгалтер
-                        </p>
-                        <p className='right-text-align'>
-                            Берсенева Наталья Владимировна
-                        </p>
-                    </li>
+                    {/*<li className='contactsp-spec border-bottom'>*/}
+                    {/*    <p>*/}
+                    {/*        Главный бухгалтер*/}
+                    {/*    </p>*/}
+                    {/*    <p className='right-text-align'>*/}
+                    {/*        Берсенева Наталья Владимировна*/}
+                    {/*    </p>*/}
+                    {/*</li>*/}
                     <li className='contactsp-spec border-bottom'>
                         <p>
                             ОГРН
